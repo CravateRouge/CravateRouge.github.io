@@ -48,7 +48,7 @@ $ python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.
 \{
     "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
 \}
-%{ endhighlight %}
+{% endhighlight %}
 
 # Windows
 The following code demonstrates how to generate kerberos TGT and ST and how they are used by bloodyAD on a Windows environment. Of course in most of the cases you'll already have an available ticket. In this case jump directly to the bloodyAD part.
