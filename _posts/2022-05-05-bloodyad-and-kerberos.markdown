@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "bloodyAD and Kerberos"
-date: 2022-05-05 14:16:51 +0200
-author: CravateRouge
+title:  "bloodyAD and Kerberos"
+date:   2022-05-05 14:16:51 +0200
 categories: "Active Directory" "Privilege Escalation"
 ---
 Most of the time I use NTLM authentication, but in some situations, we only have a kerberos TGT or ST and it would be a shame to not use it to attempt to elevate our privileges in the AD. So let's see how we can do this with bloodyAD.
@@ -44,9 +43,9 @@ $ sudo echo "192.168.10.2 win-ij5b521uo5l.bloody.local bloody.local" >> /etc/hos
 
 ## And now the magic happens
 $ python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local getObjectAttributes  'DC=bloody,DC=local' msDS-Behavior-Version
-\{
+{
     "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
-\}
+}
 {% endhighlight %}
 
 # Windows
@@ -115,9 +114,9 @@ Cached Tickets: (1)
 ## And now the magic happens
 ## (Don't forget to add an entry in C:\Windows\System32\drivers\etc\hosts for WIN-IJ5B521UO5L.bloody.local if you need)
 (venv) PS > python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local getObjectAttributes 'DC=bloody,DC=local' msDS-Behavior-Version
-\{
+{
     "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
-\}
+}
 {% endhighlight %}
 
 * * *
