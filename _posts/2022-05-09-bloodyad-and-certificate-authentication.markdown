@@ -7,7 +7,7 @@ categories: ad privesc
 tags: ad privesc bloodyad certificate authentication
 ---
 A few days ago I read a [great article](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html) from Yannick Méheut of Almond about certificate authentication in Active Directory environment. It is especially useful when PKINIT is not supported and thus you can't use your certificate to request a TGT.
-This is why I wanted to extend the capabilities of bloodyAD by allowing certificate authentication.
+This is why I wanted to extend the capabilities of [bloodyAD](https://github.com/CravateRouge/bloodyAD) by allowing certificate authentication.
 Here is an example on how to use it (the first part show how to get a certificate if you just want to try the functionality):
 {% highlight powershell %}
 # Grab the cert

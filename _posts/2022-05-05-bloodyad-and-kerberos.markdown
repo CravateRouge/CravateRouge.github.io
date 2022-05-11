@@ -6,7 +6,7 @@ date:   2022-05-05 14:16:51 +0200
 categories: ad privesc
 tags: ad privesc bloodyad kerberos authentication
 ---
-Most of the time I use NTLM authentication, but in some situations, we only have a kerberos TGT or ST and it would be a shame to not use it to attempt to elevate our privileges in the AD. So let's see how we can do this with bloodyAD.
+Most of the time I use NTLM authentication, but in some situations, we only have a kerberos TGT or ST and it would be a shame to not use it to attempt to elevate our privileges in the AD. So let's see how we can do this with [bloodyAD](https://github.com/CravateRouge/bloodyAD).
 
 # Linux
 
@@ -51,7 +51,7 @@ $ python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.
 {% endhighlight %}
 
 # Windows
-The following code demonstrates how to generate kerberos TGT and ST and how they are used by bloodyAD on a Windows environment. Of course in most of the cases you'll already have an available ticket. In this case jump directly to the bloodyAD part.
+The following code demonstrates how to generate kerberos TGT and ST and how they are used by [bloodyAD](https://github.com/CravateRouge/bloodyAD) on a Windows environment. Of course in most of the cases you'll already have an available ticket. In this case jump directly to the [bloodyAD](https://github.com/CravateRouge/bloodyAD) part.
 
 {% highlight powershell %}
 # Get a TGT
@@ -123,5 +123,5 @@ Cached Tickets: (1)
 
 * * *
 #### Note
-Unfortunately bloodyAD relies on Ldap3 for ldap operations and Ldap3 doesn't support kerberos sign and seal. Thus, it isn't possible to perform ldap operations requiring exchange of secrets (e.g passwords) using a cleartext ldap connection, ldaps is required. However, ldaps isn't enabled by default on Active Directory environment.
-To overcome this limitation, bloodyAD supports also SAMR to modify object passwords and add computer objects.
+Unfortunately [bloodyAD](https://github.com/CravateRouge/bloodyAD) relies on Ldap3 for ldap operations and Ldap3 doesn't support kerberos sign and seal. Thus, it isn't possible to perform ldap operations requiring exchange of secrets (e.g passwords) using a cleartext ldap connection, ldaps is required. However, ldaps isn't enabled by default on Active Directory environment.
+To overcome this limitation, [bloodyAD](https://github.com/CravateRouge/bloodyAD) supports also SAMR to modify object passwords and add computer objects.
