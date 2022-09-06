@@ -123,5 +123,6 @@ Cached Tickets: (1)
 
 * * *
 #### Note
-Unfortunately [bloodyAD](https://github.com/CravateRouge/bloodyAD) relies on Ldap3 for ldap operations and Ldap3 doesn't support kerberos sign and seal. Thus, it isn't possible to perform ldap operations requiring exchange of secrets (e.g passwords) using a cleartext ldap connection, ldaps is required. However, ldaps isn't enabled by default on Active Directory environment.
-To overcome this limitation, [bloodyAD](https://github.com/CravateRouge/bloodyAD) supports also SAMR to modify object passwords and add computer objects.
+~~Unfortunately [bloodyAD](https://github.com/CravateRouge/bloodyAD) relies on Ldap3 for ldap operations and Ldap3 doesn't support kerberos sign and seal. Thus, it isn't possible to perform ldap operations requiring exchange of secrets (e.g passwords) using a cleartext ldap connection, ldaps is required. However, ldaps isn't enabled by default on Active Directory environment.
+To overcome this limitation, [bloodyAD](https://github.com/CravateRouge/bloodyAD) supports also SAMR to modify object passwords and add computer objects.~~
+Since commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) exchange of sensitive information through a cleartext ldap exchange is supported.
