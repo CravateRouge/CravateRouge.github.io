@@ -9,6 +9,53 @@ tags: ad privesc bloodyad certificate authentication
 A few days ago I read a [great article](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html) from Yannick Méheut of Almond about certificate authentication in Active Directory environment. It is especially useful when PKINIT is not supported and thus you can't use your certificate to request a TGT.
 This is why I wanted to extend the capabilities of [bloodyAD](https://github.com/CravateRouge/bloodyAD) by allowing certificate authentication.
 Here is an example on how to use it (the first part show how to get a certificate if you just want to try the functionality):
+
+{% highlight bash %}
+# Grab the cert
+## Get the CA Authority name
+$ certipy find -u Administrator@bloody -p 'Password123!' -dc-ip 192.168.10.2 -debug
+Certipy v4.0.0 - by Oliver Lyak (ly4k)
+
+[+] Authenticating to LDAP server
+[+] Bound to ldaps://192.168.10.2:636 - ssl
+[+] Default path: DC=bloody,DC=local
+[+] Configuration path: CN=Configuration,DC=bloody,DC=local
+[*] Finding certificate templates
+[*] Found 33 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 11 enabled certificate templates
+[+] Trying to resolve 'DC01.bloody.local' at '192.168.10.2'
+[*] Trying to get CA configuration for 'bloody-DC01-CA' via CSRA
+[+] Trying to get DCOM connection for: 192.168.10.2
+[*] Got CA configuration for 'bloody-DC01-CA'
+[+] Resolved 'DC01.bloody.local' from cache: 192.168.10.2
+[+] Connecting to 192.168.10.2:80
+
+## Get the PFX
+$ certipy req -u Administrator@bloody.local -p 'Password123!' -target 192.168.10.2 -ca bloody-DC01-CA -template User
+Certipy v4.0.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Successfully requested certificate
+[*] Request ID is 4
+[*] Got certificate with UPN 'Administrator@bloody.local'
+[*] Certificate has no object SID
+[*] Saved certificate and private key to 'administrator.pfx'
+
+## Convert it to pem
+$ openssl pkcs12 -in administrator.pfx -out administrator.pem -nodes
+Enter Import Password:
+
+# Use cert authentication
+$ bloodyAD -c ":administrator.pem" -d bloody -u Administrator --host 192.168.10.2 getObjectAttributes  'DC=bloody,DC=local' msDS-Behavior-Version
+{
+    "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
+}
+{% endhighlight %}
+
+### Old certipy version v2.0.9
+
 {% highlight powershell %}
 # Grab the cert
 
@@ -47,13 +94,4 @@ Certipy v2.0.9 - by Oliver Lyak (ly4k)
 [*] Request ID is 4
 [*] Got certificate with UPN 'Administrator@bloody.local'
 [*] Saved certificate and private key to 'administrator.pfx'
-
-## Convert it to pem
-(venv) PS > openssl.exe pkcs12 -in administrator.pfx -out administrator.pem -nodes
-
-# Use cert authentication
-(venv) PS > python bloodyAD.py -c ":administrator.pem" -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local getObjectAttributes  'DC=bloody,DC=local' msDS-Behavior-Version
-{
-    "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
-}
 {% endhighlight %}
