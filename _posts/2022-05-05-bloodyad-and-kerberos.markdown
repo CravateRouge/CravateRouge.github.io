@@ -40,7 +40,8 @@ Valid starting       Expires              Service principal
 	renew until 06/05/2022 19:42:55
 
 ## If your DNS doesn't resolve
-## Note: second level domain name with ".local" added to /etc/hosts doesn't resolve on some Manjaro versions for unknown reasons
+## Note: second level domain name with ".local" added to /etc/hosts doesn't resolve on some Manjaro versions
+# see https://forum.manjaro.org/t/mapping-for-etc-hosts-entries-with-local-as-tld-isnt-working/116021
 $ sudo echo "192.168.10.2 win-ij5b521uo5l.bloody.local bloody.local" >> /etc/hosts
 
 ## And now the magic happens
