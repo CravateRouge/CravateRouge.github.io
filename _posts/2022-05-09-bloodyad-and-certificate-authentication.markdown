@@ -48,10 +48,10 @@ $ openssl pkcs12 -in administrator.pfx -out administrator.pem -nodes
 Enter Import Password:
 
 # Use cert authentication
-$ bloodyAD -c ":administrator.pem" -d bloody -u Administrator --host 192.168.10.2 getObjectAttributes  'DC=bloody,DC=local' msDS-Behavior-Version
-{
-    "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
-}
+$ bloodyAD -c ":administrator.pem" -d bloody -u Administrator --host 192.168.10.2 get object 'DC=bloody,DC=local' --attr msDS-Behavior-Version
+
+distinguishedName: DC=bloody,DC=local
+msDS-Behavior-Version: DS_BEHAVIOR_WIN2016
 {% endhighlight %}
 
 ### Old certipy version v2.0.9

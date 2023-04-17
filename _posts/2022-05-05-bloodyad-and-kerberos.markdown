@@ -45,10 +45,10 @@ Valid starting       Expires              Service principal
 $ sudo echo "192.168.10.2 win-ij5b521uo5l.bloody.local bloody.local" >> /etc/hosts
 
 ## And now the magic happens
-$ python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local getObjectAttributes  'DC=bloody,DC=local' msDS-Behavior-Version
-{
-    "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
-}
+$ python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local get object 'DC=bloody,DC=local' --attr msDS-Behavior-Version
+
+distinguishedName: DC=bloody,DC=local
+msDS-Behavior-Version: DS_BEHAVIOR_WIN2016
 {% endhighlight %}
 
 # Windows
@@ -115,15 +115,13 @@ Cached Tickets: (1)
 (venv) PS > pip install --upgrade --force-reinstall winkerberos
 
 ## And now the magic happens
-## (Don't forget to add an entry in C:\Windows\System32\drivers\etc\hosts for WIN-IJ5B521UO5L.bloody.local if you need)
-(venv) PS > python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local getObjectAttributes 'DC=bloody,DC=local' msDS-Behavior-Version
-{
-    "msDS-Behavior-Version": "DS_BEHAVIOR_WIN2016"
-}
+## (Don't forget to add an entry in C:\Windows\System32\drivers\etc\hosts for WIN-IJ5B521UO5L.bloody.local if needed)
+(venv) PS > python bloodyAD.py -k -d bloody.local -u Administrator --host WIN-IJ5B521UO5L.bloody.local get object 'DC=bloody,DC=local' --attr msDS-Behavior-Version
+
+distinguishedName: DC=bloody,DC=local
+msDS-Behavior-Version: DS_BEHAVIOR_WIN2016
 {% endhighlight %}
 
 * * *
 #### Note
-~~Unfortunately [bloodyAD](https://github.com/CravateRouge/bloodyAD) relies on Ldap3 for ldap operations and Ldap3 doesn't support kerberos sign and seal. Thus, it isn't possible to perform ldap operations requiring exchange of secrets (e.g passwords) using a cleartext ldap connection, ldaps is required. However, ldaps isn't enabled by default on Active Directory environment.
-To overcome this limitation, [bloodyAD](https://github.com/CravateRouge/bloodyAD) supports also SAMR to modify object passwords and add computer objects.~~
-Since commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) exchange of sensitive information through a cleartext ldap exchange is supported.
+Since commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) exchange of sensitive information without LDAPS is supported.
