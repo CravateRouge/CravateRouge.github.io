@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Total Recall
-email: baptiste.crepin@ntymail.com
+title: CravateRouge Ltd
+email: baptiste@cravaterouge.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Tips and tricks on offensive security especially active directory privilege escalation techniques using bloodyAD.
+  Tighten your security
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cravaterouge.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cravaterouge.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rouge_cravate
 github_username:  CravateRouge
 
