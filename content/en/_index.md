@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-date: 2023-10-24
+date: 2024-10-02
 type: landing
 
 design:
@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: Tighten your security
-      text: 🧱 Solutions tailored for your needs  🧱
+      text: 🌎 Solutions available worldwide 🌎
       primary_action:
         text: Contact Us
         url: mailto:contact@cravaterouge.com
@@ -19,11 +19,11 @@ sections:
       secondary_action:
         text: Discover our services
         url: /#services
-      # announcement:
-      #   text: "Announcing the release of version 1."
-      #   link:
-      #     text: "Read more"
-      #     url: "/blog/"
+      announcement:
+        text: "Check our latest"
+        link:
+          text: "articles"
+          url: "/articles/"
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -34,7 +34,8 @@ sections:
         color: "navy"
         image:
           # Add your image background to `assets/media/`.
-          filename: bg-triangles.svg
+          filename: constellation.svg
+          size: "auto;background-repeat:repeat"
           filters:
             brightness: 0.5
   - block: stats
@@ -49,7 +50,7 @@ sections:
         - statistic: "1k5+"
           description: |
             GitHub stars  
-            for security tools
+            for our security tools
 
     design:
       # Section background color (CSS class)
@@ -61,17 +62,23 @@ sections:
     id: services
     content:
       title: Services
-      text: Build your security maturity 🧱
+      text: 🧱 Build your security maturity 🧱
       items:
         - name: Protect
           icon: lock-closed
           description: Harden your systems by adding measures adapted to your infrastructure
         - name: Audit
           icon: bolt
-          description: Test your security with pentests to see if it can resist to malicious actors! 
+          description: Test your security with pentests to see if it can resist to threat actors!
+        - name: Training
+          icon: academic-cap
+          description: Cybersecurity will have no secrets for you!
         - name: Investigate
           icon: magnifying-glass
           description: Conduct a post-attack investigation to understand what happened
+        - name: Softwares
+          icon: beaker
+          description: Get protection, detection and audit tools tailored to your needs
   - block: cta-image-paragraph
     id: services-details
     content:
@@ -89,22 +96,37 @@ sections:
             text: Ask Quotation
             url: mailto:contact@cravaterouge.com
         - title: Audit your assets
-          text: Test your security with pentests to see if it can resist to malicious actors!
+          text: Test your security with pentests to see if it can resist to threat actors!
           feature_icon: bolt
           features:
-            - "Identify weaknesses in your applications with pentests using automated tools and advanced attacks"
-            - "Test your resilience against malicious actors with attack simulations (red team, insider compromission...)"
+            - "Identify weaknesses in your applications with pentests using automated tools and advanced attacks depending of your needs"
+            - "Test your resilience against threat actors with attack simulations (red team, insider compromission...)"
             - "Prices start at 1000$"
           # Upload image to `assets/media/` and reference the filename here
           image: audit.jpg
           button:
             text: Order Now
             url: mailto:contact@cravaterouge.com
+
+        - title: Train your teams
+          text: Cybersecurity will have no secrets for you!
+          feature_icon: academic-cap
+          features:
+            - "Raise your teams' safety awareness with mail phishing campaigns"
+            - "Learn to develop secured softwares"
+            - "Trainings on security topics specific to your needs"
+            - "Starting at 900$ per day"
+          # Upload image to `assets/media/` and reference the filename here
+          image: training.jpg
+          button:
+            text: Book now
+            url: mailto:contact@cravaterouge.com
+
         - title: Conduct post-attack investigation
           text: Conduct a post-attack investigation to understand what happened
           feature_icon: magnifying-glass
           features:
-            - "Identify which path the malicious actor took to secure it"
+            - "Identify which path the threat actor took and secure it"
             - "Evaluate the damages"
             - "Establishing an attacker profile"
             - "150$/hr"
@@ -112,6 +134,19 @@ sections:
           image: investigate.jpg
           button:
             text: Request Now
+            url: mailto:contact@cravaterouge.com
+        
+        - title: Custom softwares
+          text: Get protection, detection and audit tools tailored to your needs
+          feature_icon: beaker
+          features:
+            - "Protect your softwares of vulerabilities with custom patching"
+            - "Detect targeted threats"
+            - "PoC exploits and malwares to simulate a threat"
+          # Upload image to `assets/media/` and reference the filename here
+          image: craft.jpg
+          button:
+            text: Ask Quotation
             url: mailto:contact@cravaterouge.com
     design:
       # Section background color (CSS class)
@@ -134,7 +169,7 @@ sections:
 
   - block: logos
     content:
-      title: "They trusted us"
+      title: "They chose us"
       items:
         - logo: "axa.png"
         - logo: "bnp.png"
@@ -147,7 +182,7 @@ sections:
   - block: cta-card
     content:
       title: Strengthen your infrastructure
-      text: As easy as 1, 2, 3!
+      text: Our team is taking care of it!
       button:
         text: Contact Us
         url: contact@cravaterouge.com

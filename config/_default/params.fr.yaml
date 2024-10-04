@@ -1,0 +1,55 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+appearance:
+  mode: light
+  color: red
+
+# SEO
+marketing:
+  seo:
+    site_type: LocalBusiness
+    local_business_type: 'ProfessionalService'
+    org_name: ''
+    description: 'Renouez avec la sécurité'
+    twitter: 'rouge_cravate'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    align: "center"
+    fixed_to_top: true
+    logo:
+      text: ""
+      # Logo filename in `assets/media/` folder
+      filename: "logo.png"
+    button:
+      enable: true
+      text: "Contactez-nous"
+      url: "mailto:contact@cravaterouge.com"
+    show_search: true
+    show_theme_chooser: true
+
+# Site footer
+footer:
+  copyright:
+    notice: '© {year} CravateRouge Ltd'
+
+# Localization
+locale:
+  date_format: '2 Jan, 2006'
+  time_format: '15:04'

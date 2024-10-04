@@ -59,5 +59,5 @@ We may update these Terms from time to time. We will notify you of any changes b
 
 **13. Contact Us**
 
-If you have any questions about these Terms, please contact us at baptiste@cravaterouge.com.
+If you have any questions about these Terms, please contact us at contact@cravaterouge.com.
 

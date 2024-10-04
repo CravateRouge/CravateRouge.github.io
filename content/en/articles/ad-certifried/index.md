@@ -1,7 +1,7 @@
 ---
 title: Exploiting Certifried (CVE-2022-26923)
 summary: Discover how to exploit the certifried vulnerability easily with bloodyAD.
-date: 2022-05-11
+date: 2024-05-11
 aliases: [/ad/privesc/2022/05/11/bloodyad-and-CVE-2022-26923]
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
