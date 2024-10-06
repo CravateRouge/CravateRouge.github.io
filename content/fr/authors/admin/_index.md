@@ -25,7 +25,7 @@ organizations:
     url: https://cravaterouge.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Passionné en cybersécurité, spécialisé dans les technologies Active Directory et cloud Azure et intervenant à la Black Hat US.
+bio: Passionné en cybersécurité, spécialisé dans les technologies Active Directory/Cloud Azure et intervenant à la Black Hat US.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -60,4 +60,4 @@ Diplômé d’un master en cybersécurité de l’Université de Paris-Saclay, i
 
 Son parcours professionnel lui a donné l’opportunité de travailler sur une variété de technologies (Web, mobiles, systèmes...). Il a également formé de nombreux professionnels à la cybersécurité, notamment dans le développement sécurisé.
 
-En parallèle il contribue à la communauté cyber en developpant des outils de sécurité opensource et en partageant son expertise à des conférences comme la Black Hat de Las Vegas 2022.
+En parallèle il contribue à la communauté cyber en développant des outils de sécurité opensource et en partageant son expertise à des conférences comme la Black Hat de Las Vegas 2022.

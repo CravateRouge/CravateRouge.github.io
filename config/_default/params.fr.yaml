@@ -14,10 +14,13 @@ marketing:
     site_type: LocalBusiness
     local_business_type: 'ProfessionalService'
     org_name: ''
-    description: 'Renouez avec la sécurité'
+    description: |
+      Renouez avec la sécurité
+      Nous fournissons des services de cybersécurité correspondants à vos besoins.
+      De la protection à l'audit en passant par des formations personnalisées, nous fournissons aussi des analyses forensiques et des logiciels de sécurité personnalisés.
     twitter: 'rouge_cravate'
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-64YDD5310R'
     baidu_tongji: ''
     plausible: ''
     fathom: ''

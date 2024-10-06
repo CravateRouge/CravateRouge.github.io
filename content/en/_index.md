@@ -140,7 +140,7 @@ sections:
           text: Get protection, detection and audit tools tailored to your needs
           feature_icon: beaker
           features:
-            - "Protect your softwares of vulerabilities with custom patching"
+            - "Protect your softwares of vulnerabilities with custom patching"
             - "Detect targeted threats"
             - "PoC exploits and malwares to simulate a threat"
           # Upload image to `assets/media/` and reference the filename here

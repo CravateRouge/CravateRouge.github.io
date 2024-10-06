@@ -1,8 +1,7 @@
 ---
-title: Playing with Kerberos
-summary: Take full control of the Kerberos protocol on Active Directory using bloodyAD.
+title: Jouer avec Kerberos
+summary: Maîtrisez le protocole Kerberos sur Active Directory en utilisant bloodyAD.
 date: 2024-03-05
-aliases: [/ad/privesc/2022/05/05/bloodyad-and-kerberos]
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 # image:
@@ -18,9 +17,9 @@ tags:
 categories:
   - bloodyAD
 ---
-> ⚠️ Since commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) exchange of sensitive information without LDAPS is supported.
+> ⚠️ Depuis le commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) l'échange d'informations sensibles sans LDAPS est supportée.
 
-Most of the time I use NTLM authentication, but in some situations, we only have a kerberos TGT or ST and it would be a shame to not use it to attempt to elevate our privileges in the AD. So let's see how we can do this with [bloodyAD](https://github.com/CravateRouge/bloodyAD).
+La plupart du temps, j’utilise l'authentification NTML mais parfois, on doit se débrouiller avec un TGT ou ST kerberos et ça serait dommage de ne pas les utiliser pour essayer d'élever ses privilèges dans l'AD. Alors voyons comment faire ça avec [bloodyAD](https://github.com/CravateRouge/bloodyAD).
 
 ## Linux
 
@@ -66,7 +65,7 @@ msDS-Behavior-Version: DS_BEHAVIOR_WIN2016
 ```
 
 ## Windows
-The following code demonstrates how to generate kerberos TGT and ST and how they are used by [bloodyAD](https://github.com/CravateRouge/bloodyAD) on a Windows environment. Of course in most of the cases you'll already have an available ticket. In this case jump directly to the [bloodyAD](https://github.com/CravateRouge/bloodyAD) part.
+Le code ci-dessous montre comment générer un TGT ou ST et comment ils sont utilisés avec [bloodyAD](https://github.com/CravateRouge/bloodyAD) dans un environnement Windows. Bien sûr dans la majorité des cas on a déjà des tickets disponibles. Dans ce cas allez directement à la partie [bloodyAD](https://github.com/CravateRouge/bloodyAD).
 
 ```ps1
 # Get a TGT

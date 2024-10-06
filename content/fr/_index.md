@@ -128,7 +128,7 @@ sections:
           feature_icon: magnifying-glass
           features:
             - "Identifiez les chemins empruntés par les cybercriminels et sécurisez-les"
-            - "Evaluez l'impact"
+            - "Évaluez l'impact"
             - "Profilez l'attaquant"
             - "136€ l'heure"
           # Upload image to `assets/media/` and reference the filename here

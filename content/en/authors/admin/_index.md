@@ -25,7 +25,7 @@ organizations:
     url: https://cravaterouge.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Security enthusiast, specialised in Azure cloud and Active Directory technologies and speaker at the US Black Hat.
+bio: Security enthusiast, specialized in Azure Cloud/Active Directory technologies and speaker at the US Black Hat.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -54,7 +54,7 @@ highlight_name: true
 website: ""
 ---
 
-Security expert and enthusiast, specialised in Azure cloud and Active Directory technologies.
+Security expert and enthusiast, specialized in Azure cloud and Active Directory technologies.
 
 Graduating with a master's degree in cybersecurity from the University of Paris-Saclay, he began his career in 2018 as an auditor for the consulting firm CGI. He then joined AXA as a Red Team operator.
 

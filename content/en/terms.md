@@ -27,7 +27,7 @@ You agree to use the Website in a lawful and respectful manner. You are prohibit
 
 **5. Intellectual Property**
 
-The Content on the Website is protected by copyright, trademark, and other intellectual property laws. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, or otherwise exploit any Content without our prior written consent or explicit mention of the company in the derivated work.
+The Content on the Website is protected by copyright, trademark, and other intellectual property laws. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, or otherwise exploit any Content without our prior written consent or explicit mention of the company in the derived work.
 
 **6. Disclaimer**
 

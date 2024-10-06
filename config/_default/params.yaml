@@ -14,10 +14,13 @@ marketing:
     site_type: LocalBusiness
     local_business_type: 'ProfessionalService'
     org_name: ''
-    description: 'Tighten your security'
+    description: |
+      Tighten your security.
+      We provide cybersecurity services tailored to your needs.
+      From protection to audit, we also provide trainings, forensic and custom security softwares.
     twitter: 'rouge_cravate'
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-64YDD5310R'
     baidu_tongji: ''
     plausible: ''
     fathom: ''

