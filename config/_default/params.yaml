@@ -15,8 +15,7 @@ marketing:
     local_business_type: 'ProfessionalService'
     org_name: ''
     description: |
-      Tighten your security.
-      We provide cybersecurity services tailored to your needs.
+      Keep it tight with your security. At CravateRouge Ltd we provide cybersecurity services tailored to your needs.
       From protection to audit, we also provide trainings, forensic and custom security softwares.
     twitter: 'rouge_cravate'
   analytics:
@@ -43,7 +42,7 @@ header:
     button:
       enable: true
       text: "Contact Us"
-      url: "mailto:contact@cravaterouge.com"
+      url: "contact/"
     show_search: true
     show_theme_chooser: true
 

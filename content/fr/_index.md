@@ -14,7 +14,7 @@ sections:
       text: 🌎 Solutions disponibles à l'international 🌎
       primary_action:
         text: Contactez-nous
-        url: mailto:contact@cravaterouge.com
+        url: contact/
         icon: rocket-launch
       secondary_action:
         text: Découvrez nos services
@@ -64,6 +64,9 @@ sections:
       title: Services
       text: 🧱 Construisez une infrastructure robuste 🧱
       items:
+        - name: Secure Workspace
+          icon: cpu-chip
+          description: Notre nouvelle solution pour un espace numérique d'entreprise sécurisé
         - name: Protection
           icon: lock-closed
           description: Renforcez vos systèmes en implémentant des mesures adaptées
@@ -83,6 +86,19 @@ sections:
     id: services-details
     content:
       items:
+        - title: Secure Workspace
+          text: Une infrastructure sécurisée en quelques clics
+          feature_icon: cpu-chip
+          features:
+            - "Accès unifiés et renforcés"
+            - "Gestion du parc informatique centralisée"
+            - "Reprenez le contrôle de vos données (conformité RGPD)"
+            - "Basé sur les technologies Microsoft™ (Aucun logiciel tiers à installer)"
+          image: secureWorkspace.jpeg
+          button:
+            text: En savoir plus
+            url: articles/secure-workspace/
+
         - title: Protégez votre infrastructure
           text: Renforcez vos systèmes en implémentant des mesures adaptées
           feature_icon: lock-closed
@@ -94,7 +110,7 @@ sections:
           image: protect.jpg
           button:
             text: Demandez un devis
-            url: mailto:contact@cravaterouge.com
+            url: contact/
 
         - title: Auditez vos systèmes
           text: Testez la résistance de votre infrastructure face aux attaques!
@@ -102,12 +118,12 @@ sections:
           features:
             - "Identifiez les faiblesses de vos applications via des pentests en utilisant des outils automatisés et/ou des attaques avancées en fonction de vos besoins"
             - "Vérifiez votre robustesse face aux cybercriminels en réalisant des simulations d'attaques (red team, menace interne...)"
-            - "A partir de 906€"
+            - "A partir de 906€ HT"
           # Upload image to `assets/media/` and reference the filename here
           image: audit.jpg
           button:
             text: Commandez un audit
-            url: mailto:contact@cravaterouge.com
+            url: contact/
 
         - title: Formez vos équipes
           text: Devenez un As de la cybersécurité!
@@ -116,12 +132,12 @@ sections:
             - "Sensibilisez vos équipes aux menaces avec des campagnes de phishing mail"
             - "Apprenez à développer de manière sécurisée"
             - "Formations sur des sujet cyber spécifiques à vos besoins"
-            - "A partir de 816€ par jour"
+            - "Formations à partir de 2800€ HT"
           # Upload image to `assets/media/` and reference the filename here
           image: training.jpg
           button:
             text: Réservez maintenant
-            url: mailto:contact@cravaterouge.com
+            url: contact/
         
         - title: Menez une investigation post-attaque
           text: Menez une enquête post-attaque pour comprendre les tenants et les aboutissants
@@ -130,12 +146,12 @@ sections:
             - "Identifiez les chemins empruntés par les cybercriminels et sécurisez-les"
             - "Évaluez l'impact"
             - "Profilez l'attaquant"
-            - "136€ l'heure"
+            - "136€ HT l'heure"
           # Upload image to `assets/media/` and reference the filename here
           image: investigate.jpg
           button:
             text: Contactez-nous dès maintenant
-            url: mailto:contact@cravaterouge.com
+            url: contact/
           
         - title: Logiciels sur mesure
           text: Obtenez des outils de protection, détection et audit correspondants à vos besoins
@@ -148,7 +164,7 @@ sections:
           image: craft.jpg
           button:
             text: Demandez un devis
-            url: mailto:contact@cravaterouge.com
+            url: contact/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -186,7 +202,7 @@ sections:
       text: Notre équipe s'en occupe!
       button:
         text: Contactez-nous
-        url: contact@cravaterouge.com
+        url: contact/
     design:
       card:
         # Card background color (CSS class)

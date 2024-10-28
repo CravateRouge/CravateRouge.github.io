@@ -10,11 +10,11 @@ design:
 sections:
   - block: hero
     content:
-      title: Tighten your security
+      title: Keep it tight with your security
       text: 🌎 Solutions available worldwide 🌎
       primary_action:
         text: Contact Us
-        url: mailto:contact@cravaterouge.com
+        url: contact/
         icon: rocket-launch
       secondary_action:
         text: Discover our services
@@ -64,6 +64,9 @@ sections:
       title: Services
       text: 🧱 Build your security maturity 🧱
       items:
+        - name: Secure Workspace
+          icon: cpu-chip
+          description: Our new solution to keep your digital workspace secured
         - name: Protect
           icon: lock-closed
           description: Harden your systems by adding measures adapted to your infrastructure
@@ -83,6 +86,19 @@ sections:
     id: services-details
     content:
       items:
+        - title: Secure Workspace
+          text: For securing your infrastructure in a few steps
+          feature_icon: cpu-chip
+          features:
+            - "Unified and strengthen access"
+            - "Centralized management of your IT assets"
+            - "Take back control of your Data (GDPR compliance)"
+            - "Based on Microsoft™ technologies (no third-party required)"
+          image: secureWorkspace.jpeg
+          button:
+            text: More info
+            url: articles/secure-workspace/
+
         - title: Protect your infrastructure
           text: Harden your systems by adding measures adapted to your infrastructure
           feature_icon: lock-closed
@@ -94,19 +110,19 @@ sections:
           image: protect.jpg
           button:
             text: Ask Quotation
-            url: mailto:contact@cravaterouge.com
+            url: contact/
         - title: Audit your assets
           text: Test your security with pentests to see if it can resist to threat actors!
           feature_icon: bolt
           features:
             - "Identify weaknesses in your applications with pentests using automated tools and advanced attacks depending of your needs"
             - "Test your resilience against threat actors with attack simulations (red team, insider compromission...)"
-            - "Prices start at 1000$"
+            - "Prices start at $1000 excl. tax"
           # Upload image to `assets/media/` and reference the filename here
           image: audit.jpg
           button:
             text: Order Now
-            url: mailto:contact@cravaterouge.com
+            url: contact/
 
         - title: Train your teams
           text: Cybersecurity will have no secrets for you!
@@ -115,12 +131,12 @@ sections:
             - "Raise your teams' safety awareness with mail phishing campaigns"
             - "Learn to develop secured softwares"
             - "Trainings on security topics specific to your needs"
-            - "Starting at 900$ per day"
+            - "Trainings start at $3000 excl. tax"
           # Upload image to `assets/media/` and reference the filename here
           image: training.jpg
           button:
             text: Book now
-            url: mailto:contact@cravaterouge.com
+            url: contact/
 
         - title: Conduct post-attack investigation
           text: Conduct a post-attack investigation to understand what happened
@@ -129,12 +145,12 @@ sections:
             - "Identify which path the threat actor took and secure it"
             - "Evaluate the damages"
             - "Establishing an attacker profile"
-            - "150$/hr"
+            - "$150/hr excl. taxes"
           # Upload image to `assets/media/` and reference the filename here
           image: investigate.jpg
           button:
             text: Request Now
-            url: mailto:contact@cravaterouge.com
+            url: contact/
         
         - title: Custom softwares
           text: Get protection, detection and audit tools tailored to your needs
@@ -147,7 +163,7 @@ sections:
           image: craft.jpg
           button:
             text: Ask Quotation
-            url: mailto:contact@cravaterouge.com
+            url: contact/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -185,7 +201,7 @@ sections:
       text: Our team is taking care of it!
       button:
         text: Contact Us
-        url: contact@cravaterouge.com
+        url: contact/
     design:
       card:
         # Card background color (CSS class)

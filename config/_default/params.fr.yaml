@@ -15,7 +15,7 @@ marketing:
     local_business_type: 'ProfessionalService'
     org_name: ''
     description: |
-      Renouez avec la sécurité
+      Renouez avec la sécurité.
       Nous fournissons des services de cybersécurité correspondants à vos besoins.
       De la protection à l'audit en passant par des formations personnalisées, nous fournissons aussi des analyses forensiques et des logiciels de sécurité personnalisés.
     twitter: 'rouge_cravate'
@@ -43,7 +43,7 @@ header:
     button:
       enable: true
       text: "Contactez-nous"
-      url: "mailto:contact@cravaterouge.com"
+      url: "contact/"
     show_search: true
     show_theme_chooser: true
 

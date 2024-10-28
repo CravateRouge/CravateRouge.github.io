@@ -1,0 +1,39 @@
+{{/* Hugo Blox: Contact Page */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+<div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    <iframe class="w-full" src="https://storage.googleapis.com/maps-solutions-5t1klb5xxp/locator-plus/i5i2/locator-plus.html"
+    width="100%" height="100%"
+    style="border:0; order: 1;"
+    loading="lazy">
+    </iframe>
+    <div class="mt-4 md:mt-0">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{$title}}</h2>
+        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{{$text}}</p>
+        <ul>
+        <li class="relative mb-4 pl-6">
+            {{ partial "functions/get_icon" (dict "name" "hero/envelope" "attributes" `class="inline-block pr-3" style="height: 1em;"`)  }}
+            {{ $block.content.mail | markdownify }}
+        </li>
+        <li class="relative mb-4 pl-6">
+            {{ partial "functions/get_icon" (dict "name" "brands/linkedin" "attributes" `class="inline-block pr-3" style="height: 1em;"`)  }}
+            {{ $block.content.linkedin | markdownify }}
+        </li>
+        <li class="relative mb-4 pl-6">
+            {{ partial "functions/get_icon" (dict "name" "brands/twitter" "attributes" `class="inline-block pr-3" style="height: 1em;"`)  }}
+            {{ $block.content.twitter | markdownify }}
+        </li>
+        <li class="relative mb-4 pl-6">
+            {{ partial "functions/get_icon" (dict "name" "brands/github" "attributes" `class="inline-block pr-3" style="height: 1em;"`)  }}
+            {{ $block.content.github | markdownify }}
+        </li>
+        </ul>
+    </div>
+</div>
