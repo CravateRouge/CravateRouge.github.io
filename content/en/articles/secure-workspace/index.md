@@ -37,7 +37,7 @@ To help you with your compliance policy for the General Data Protection Regulati
 ## 🎁 Included
 - Microsoft Office (Word, Excel, PowerPoint, Outlook, Teams, OneNote, Access and Publisher)
 - Mail Server with advanced phishing protection and cloud mailbox with 50Go/user
-- DOmaine name and one website hosting
+- Domaine name and one website hosting
 - One Windows 11 Business Edition licence per user
 - Microsoft Office 365 Web and Mobile
 - OneDrive Storage 1To per user
