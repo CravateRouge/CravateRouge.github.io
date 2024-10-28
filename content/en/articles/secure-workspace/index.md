@@ -23,7 +23,7 @@ Discover our new solution **Secure Workspace** to keep your digital workspace se
 This solution based on Microsoft™ technologies will allow you to manage your IT security in a few steps so you can focus on your business.\
 <ins>No third-party required!</ins>
 
-## Description
+## Key Features
 **Secure Workspace** takes the following into account:
 - <ins>Digital Identity Management</ins>:\
 A single account to rule them all! (Valid for all Microsoft™ products, Windows Included)\

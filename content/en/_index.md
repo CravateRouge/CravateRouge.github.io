@@ -145,7 +145,7 @@ sections:
             - "Identify which path the threat actor took and secure it"
             - "Evaluate the damages"
             - "Establishing an attacker profile"
-            - "$150/hr excl. taxes"
+            - "$150/hr excl. tax"
           # Upload image to `assets/media/` and reference the filename here
           image: investigate.jpg
           button:

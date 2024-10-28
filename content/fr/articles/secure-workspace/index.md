@@ -23,7 +23,7 @@ Découvrez notre nouvelle solution **Secure Workspace** pour sécuriser simpleme
 Cette solution basée sur les technologies Microsoft™ vous permettra de gérer la sécurité de votre infrastructure en seulement quelques clics pour vous concentrer sur votre cœur de métier.\
 <ins>Aucun logiciel tiers n'est requis!</ins>
 
-## Description
+## Fonctionnalités principales
 Le **Secure Workspace** prend en compte les éléments suivants:
 - <ins>Gestion des identités numériques</ins>:\
 Un compte unique pour les gouverner tous! (Valable pour tous les produits Microsoft™, Windows Inclus)\
