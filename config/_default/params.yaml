@@ -49,7 +49,9 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} CravateRouge Ltd'
+    notice: |
+      © {year} CravateRouge Ltd. All rights reserved.\
+      CravateRouge Limited is a private limited company registered in Hong Kong SAR under the incorporation number 76292843.
 
 # Localization
 locale:

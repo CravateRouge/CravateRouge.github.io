@@ -11,6 +11,11 @@ en:
 fr:
   languageCode: fr-FR
   contentDir: content/fr
+
+zh:
+  languageCode: zh-Hans
+  contentDir: content/zh
+
 # Uncomment the lines below to configure your website in a second language.
 #zh:
 #  languageCode: zh-Hans

@@ -15,9 +15,8 @@ marketing:
     local_business_type: 'ProfessionalService'
     org_name: ''
     description: |
-      Renouez avec la sécurité.
-      Nous fournissons des services de cybersécurité correspondants à vos besoins.
-      De la protection à l'audit en passant par des formations personnalisées, nous fournissons aussi des analyses forensiques et des logiciels de sécurité personnalisés.
+      严格守护你的网络安全。在卡瓦特网络安全公司，我们会提供根据您的需求量身定制的网络安全服务。
+      从保护到审计，我们还提供培训、取证和定制安全软件。
     twitter: 'rouge_cravate'
   analytics:
     google_analytics: 'G-64YDD5310R'
@@ -42,8 +41,8 @@ header:
       filename: "logo.png"
     button:
       enable: true
-      text: "Contactez-nous"
-      url: "contact/"
+      text: "联络我们"
+      url: "../contact/"
     show_search: true
     show_theme_chooser: true
 
