@@ -94,7 +94,7 @@ sections:
             - "Gestion du parc informatique centralisée"
             - "Reprenez le contrôle de vos données (conformité RGPD)"
             - "Basé sur les technologies Microsoft™ (Aucun logiciel tiers à installer)"
-          image: secureWorkspace.jpeg
+          image: secureWorkspace.png
           button:
             text: En savoir plus
             url: articles/secure-workspace/
@@ -107,7 +107,7 @@ sections:
             - "Solutions adaptées à votre entreprise"
             - "Implémentez les dernières normes de sécurité"
           # Upload image to `assets/media/` and reference the filename here
-          image: protect.jpg
+          image: protect.png
           button:
             text: Demandez un devis
             url: contact/
@@ -120,7 +120,7 @@ sections:
             - "Vérifiez votre robustesse face aux cybercriminels en réalisant des simulations d'attaques (red team, menace interne...)"
             - "A partir de 906€ HT"
           # Upload image to `assets/media/` and reference the filename here
-          image: audit.jpg
+          image: audit.png
           button:
             text: Commandez un audit
             url: contact/
@@ -134,7 +134,7 @@ sections:
             - "Formations sur des sujet cyber spécifiques à vos besoins"
             - "Formations à partir de 2800€ HT"
           # Upload image to `assets/media/` and reference the filename here
-          image: training.jpg
+          image: training.png
           button:
             text: Réservez maintenant
             url: contact/
@@ -148,7 +148,7 @@ sections:
             - "Profilez l'attaquant"
             - "136€ HT l'heure"
           # Upload image to `assets/media/` and reference the filename here
-          image: investigate.jpg
+          image: investigate.png
           button:
             text: Contactez-nous dès maintenant
             url: contact/
@@ -161,7 +161,7 @@ sections:
             - "Détectez les menaces ciblées"
             - "Simulez des attaques avec des preuves de concept d'exploits et de malware personnalisés"
           # Upload image to `assets/media/` and reference the filename here
-          image: craft.jpg
+          image: craft.png
           button:
             text: Demandez un devis
             url: contact/

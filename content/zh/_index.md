@@ -96,7 +96,7 @@ sections:
             - "集中管理您的IT资产"
             - "重新掌控您的数据 (遵守GDPR)"
             - "基于微软™技术(不需要第三方)"
-          image: secureWorkspace.jpeg
+          image: secureWorkspace.png
           button:
             text: "更多信息"
             url: "../articles/secure-workspace/"
@@ -109,7 +109,7 @@ sections:
             - "为您的业务量身定制优化的解决方案"
             - "实施安全标准"
           # Upload image to `assets/media/` and reference the filename here
-          image: protect.jpg
+          image: protect.png
           button:
             text: "询问报价"
             url: "contact/"
@@ -121,7 +121,7 @@ sections:
             - "利用攻击模拟测试 检验您对威胁源的抵御韧性"
             - "起价1000美元(不含税)"
           # Upload image to `assets/media/` and reference the filename here
-          image: audit.jpg
+          image: audit.png
           button:
             text: "立即订购"
             url: "contact/"
@@ -135,7 +135,7 @@ sections:
             - "针对您需求的特定安全主题的培训"
             - "培训起价3000美元(不含税)"
           # Upload image to `assets/media/` and reference the filename here
-          image: training.jpg
+          image: training.png
           button:
             text: "立即预订"
             url: "contact/"
@@ -149,7 +149,7 @@ sections:
             - "建立攻击者档案"
             - "150美元/小时(不含税)"
           # Upload image to `assets/media/` and reference the filename here
-          image: investigate.jpg
+          image: investigate.png
           button:
             text: "立即请求"
             url: "contact/"
@@ -162,7 +162,7 @@ sections:
             - "检测有针对性的威胁"
             - "PoC漏洞和恶意软件来模拟威胁"
           # Upload image to `assets/media/` and reference the filename here
-          image: craft.jpg
+          image: craft.png
           button:
             text: "询问报价"
             url: "contact/"

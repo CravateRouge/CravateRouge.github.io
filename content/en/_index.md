@@ -94,7 +94,7 @@ sections:
             - "Centralized management of your IT assets"
             - "Take back control of your Data (GDPR compliance)"
             - "Based on Microsoft™ technologies (no third-party required)"
-          image: secureWorkspace.jpeg
+          image: secureWorkspace.png
           button:
             text: More info
             url: articles/secure-workspace/
@@ -107,7 +107,7 @@ sections:
             - "Design solutions optimized for your business"
             - "Implement Security Standards"
           # Upload image to `assets/media/` and reference the filename here
-          image: protect.jpg
+          image: protect.png
           button:
             text: Ask Quotation
             url: contact/
@@ -119,7 +119,7 @@ sections:
             - "Test your resilience against threat actors with attack simulations (red team, insider compromission...)"
             - "Prices start at $1000 excl. tax"
           # Upload image to `assets/media/` and reference the filename here
-          image: audit.jpg
+          image: audit.png
           button:
             text: Order Now
             url: contact/
@@ -133,7 +133,7 @@ sections:
             - "Trainings on security topics specific to your needs"
             - "Trainings start at $3000 excl. tax"
           # Upload image to `assets/media/` and reference the filename here
-          image: training.jpg
+          image: training.png
           button:
             text: Book now
             url: contact/
@@ -147,7 +147,7 @@ sections:
             - "Establishing an attacker profile"
             - "$150/hr excl. tax"
           # Upload image to `assets/media/` and reference the filename here
-          image: investigate.jpg
+          image: investigate.png
           button:
             text: Request Now
             url: contact/
@@ -160,7 +160,7 @@ sections:
             - "Detect targeted threats"
             - "PoC exploits and malwares to simulate a threat"
           # Upload image to `assets/media/` and reference the filename here
-          image: craft.jpg
+          image: craft.png
           button:
             text: Ask Quotation
             url: contact/
