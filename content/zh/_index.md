@@ -1,6 +1,6 @@
 ---
-title: '家'
-date: 2024-10-29
+title: '家 | 卡瓦特网络安全公司'
+date: 2024-10-30
 type: landing
 
 design:
@@ -16,7 +16,7 @@ sections:
       text: 🌎 全球范围内可提供解决方案 🌎
       primary_action:
         text: 联络我们
-        url: "../contact/"
+        url: "contact/"
         icon: rocket-launch
       secondary_action:
         text: 了解我们的服务
@@ -112,7 +112,7 @@ sections:
           image: protect.jpg
           button:
             text: "询问报价"
-            url: "../contact/"
+            url: "contact/"
         - title: 审核您的资产
           text: 利用渗透测试评估您的安全体系验证其防范攻击者的能力
           feature_icon: bolt
@@ -124,7 +124,7 @@ sections:
           image: audit.jpg
           button:
             text: "立即订购"
-            url: "../contact/"
+            url: "contact/"
 
         - title: 训练你的团队
           text: 网络安全对你来说将不再有任何秘密
@@ -138,7 +138,7 @@ sections:
           image: training.jpg
           button:
             text: "立即预订"
-            url: "../contact/"
+            url: "contact/"
 
         - title: 进行袭击后调查
           text: 进行袭击后的调查,了解发生了什么?
@@ -152,7 +152,7 @@ sections:
           image: investigate.jpg
           button:
             text: "立即请求"
-            url: "../contact/"
+            url: "contact/"
         
         - title: 自定义软件
           text: 获取根据您的需求量身定制的保护、检测和审核工具
@@ -165,7 +165,7 @@ sections:
           image: craft.jpg
           button:
             text: "询问报价"
-            url: "../contact/"
+            url: "contact/"
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -203,7 +203,7 @@ sections:
       text: "我们的团队已经着手处理此事!"
       button:
         text: "联络我们"
-        url: "../contact/"
+        url: "contact/"
     design:
       card:
         # Card background color (CSS class)

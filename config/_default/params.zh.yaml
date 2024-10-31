@@ -38,11 +38,11 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "logo.png"
+      filename: "logo-zh.jpg"
     button:
       enable: true
       text: "联络我们"
-      url: "../contact/"
+      url: "contact/"
     show_search: true
     show_theme_chooser: true
 

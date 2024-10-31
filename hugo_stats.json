@@ -67,6 +67,7 @@
       "bg-white",
       "block",
       "blox-contact",
+      "blox-contact-zh",
       "blox-cta-card",
       "blox-cta-image-paragraph",
       "blox-features",
@@ -486,6 +487,7 @@
     "ids": [
       "-included",
       "-offert-avec-la-solution",
+      "bing-map",
       "cost",
       "déroulement-de-lintégration",
       "détails",
@@ -504,6 +506,7 @@
       "search",
       "search_toggle",
       "section-contact",
+      "section-contact-zh",
       "section-cta-card",
       "section-hero",
       "section-logos",
