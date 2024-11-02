@@ -2,7 +2,7 @@
 title: Certificate authentication dug up
 summary: Leverage certificate-based authentication power on Active Directory environment.
 date: 2023-11-09
-aliases: [/ad/privesc/2022/05/09/bloodyad-and-certificate-authentication]
+aliases: [/ad/privesc/2022/05/09/bloodyad-and-certificate-authentication,/ad/privesc/2022/05/09/bloodyad-and-certificate-authentication.html]
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 # image:

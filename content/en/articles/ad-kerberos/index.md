@@ -2,7 +2,7 @@
 title: Playing with Kerberos
 summary: Take full control of the Kerberos protocol on Active Directory using bloodyAD.
 date: 2024-03-05
-aliases: [/ad/privesc/2022/05/05/bloodyad-and-kerberos]
+aliases: [/ad/privesc/2022/05/05/bloodyad-and-kerberos,/ad/privesc/2022/05/05/bloodyad-and-kerberos.html]
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 # image:
