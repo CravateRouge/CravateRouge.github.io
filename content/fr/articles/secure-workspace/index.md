@@ -12,7 +12,7 @@ authors:
 
 tags:
   - Authentication
-  - Azure
+  - M365
 
 categories:
   - Solutions
