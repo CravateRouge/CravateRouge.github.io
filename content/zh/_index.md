@@ -83,7 +83,7 @@ sections:
           description: 进行袭击后的调查 了解发生了什么
         - name: 软件
           icon: beaker
-          description: 获取根据您的需求量身定制的保护、检测和审核工
+          description: 获取根据您的需求量身定制的保护、检测和审核工作
   - block: cta-image-paragraph
     id: services-details
     content:
