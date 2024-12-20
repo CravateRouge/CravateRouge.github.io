@@ -15,6 +15,6 @@ sections:
         text: Send us an e-mail describing your requirements and contact information, we will get back to you as soon as possible.
         mail: contact@cravaterouge.com
         linkedin: https://www.linkedin.com/company/cravaterouge/
-        twitter: https://x.com/rouge_cravate
+        bluesky: https://bsky.app/profile/cravaterouge.bsky.social
         github: https://github.com/CravateRouge
 ---
