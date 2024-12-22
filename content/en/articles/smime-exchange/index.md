@@ -11,7 +11,8 @@ authors:
   - admin
 
 tags:
-  - M365
+  - Microsoft
+  - Azure
 
 categories:
   - M365

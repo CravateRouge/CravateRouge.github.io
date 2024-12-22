@@ -13,13 +13,14 @@ authors:
   - admin
 
 tags:
-  - Active Directory
   - Authentication
   - CVE
   - Exploit
+  - bloodyAD
+  - Microsoft
 
 categories:
-  - bloodyAD
+  - Active Directory
 ---
 A new ADCS privesc was released: Certifried (CVE-2022-26923) with this [blogpost](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4) after Microsoft patched it.
 Here is an example on how to exploit this vulnerability with [bloodyAD](https://github.com/CravateRouge/bloodyAD) and PKINIT not supported from Linux.

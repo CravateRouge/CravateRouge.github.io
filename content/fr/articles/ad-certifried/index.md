@@ -12,13 +12,14 @@ authors:
   - admin
 
 tags:
-  - Active Directory
   - Authentication
   - CVE
   - Exploit
+  - bloodyAD
+  - Microsoft
 
 categories:
-  - bloodyAD
+  - Active Directory
 ---
 
 Une nouvelle élévation de privilège est sortie: Certifried (CVE-2022-26923) avec ce [billet de blog](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4) après que Microsoft l'ait patché.

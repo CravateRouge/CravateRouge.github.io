@@ -12,11 +12,12 @@ authors:
   - admin
 
 tags:
-  - Active Directory
   - Authentication
+  - bloodyAD
+  - Microsoft
 
 categories:
-  - bloodyAD
+  - Active Directory
 ---
 > ⚠️ Since commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) exchange of sensitive information without LDAPS is supported.
 

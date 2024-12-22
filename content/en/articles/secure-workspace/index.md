@@ -13,6 +13,7 @@ authors:
 tags:
   - Authentication
   - M365
+  - Microsoft
 
 categories:
   - Solutions

@@ -12,12 +12,12 @@ authors:
 
 tags:
   - BitLocker
-  - Hardware Security
   - TPM
   - Windows
+  - Microsoft
 
 categories:
-  - Hardware Security
+  - Windows
 ---
 
 It's Friday evening, and you've just wrapped up work. You decide to unwind with a drink at the bar downstairs before heading home. Everything is going well and you take your eyes off your briefcase enjoying your evening, byt when you look at it again, it's gone. Unfortunately, it contained sensitive data. However there's still hope because you encrypted your hard drive with [BitLocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/)! But is [BitLocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/) truly protecting you? Let's take a closer look.
@@ -25,7 +25,7 @@ It's Friday evening, and you've just wrapped up work. You decide to unwind with 
 ## What's BitLocker?
 [BitLocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/) is a Windows feature available since Windows Vista that allows you to encrypt your disk storage to avoid data theft or exposure risks when losing or changing device.
 
-It's simple to set up and transparent for the user if configured without an authentification factor. If you're not sure wether it's enabled or not on your computer, you can verify in the control panel:\
+It's simple to set up and transparent for the user if configured without an authentication factor. If you're not sure wether it's enabled or not on your computer, you can verify in the control panel:\
 ![bitlocker enabled](bitlocker_on.png)
 
 ## How's BitLocker working?
@@ -52,7 +52,7 @@ To determine which type of TPM you have, there is no straight way. You can try t
 
 If this doesn't work, you may have to check your laptop's specifications.
 
-Now, event if you have a __discrete TPM__, there is still hope. Indeed, BitLocker allows you to add an authentification factor such as a PIN or startup key. In this case, the VMK can only be requested to the TPM if you provide the correct factor. Without it, the TPM won't give you anything!\
+Now, event if you have a __discrete TPM__, there is still hope. Indeed, BitLocker allows you to add an authentication factor such as a PIN or startup key. In this case, the VMK can only be requested to the TPM if you provide the correct factor. Without it, the TPM won't give you anything!\
 Brute-forcing the factor is not a viable option because it would require sending requests to the TPM, which would necessitate to tamper the firmware or software. As I said earlier, any modification to these components will prevent the TPM from responding.\
 Then, the only way would be to trick the user to enter their PIN while probes are set to listen which is very unlikely.\
 A great [write up](https://blog.scrt.ch/2024/10/28/privilege-escalation-through-tpm-sniffing-when-bitlocker-pin-is-enabled/) of the Switzerland offensive team of Orange Cyberdefense explains it very well.

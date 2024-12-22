@@ -11,11 +11,13 @@ authors:
   - admin
 
 tags:
-  - Active Directory
   - Authentication
+  - bloodyAD
+  - Microsoft
 
 categories:
-  - bloodyAD
+  - Active Directory
+
 ---
 
 Il y a quelques jours, j'ai lu un [excellent article](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html) de Yannick Méheut d'Almond sur l'authentification par certificat dans un environnement Active Directory. C'est particulièrement utile lorsque PKINIT n'est pas supporté et que vous ne pouvez donc pas utiliser votre certificat pour demander un TGT.

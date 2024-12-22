@@ -12,11 +12,12 @@ authors:
   - admin
 
 tags:
-  - Active Directory
   - Authentication
+  - bloodyAD
+  - Microsoft
 
 categories:
-  - bloodyAD
+  - Active Directory
 ---
 A few days ago I read a [great article](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html) from Yannick Méheut of Almond about certificate authentication in Active Directory environment. It is especially useful when PKINIT is not supported and thus you can't use your certificate to request a TGT.
 This is why I wanted to extend the capabilities of [bloodyAD](https://github.com/CravateRouge/bloodyAD) by allowing certificate authentication.
