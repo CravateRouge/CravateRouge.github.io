@@ -1,20 +1,31 @@
 /* Avoid to have backticks into the inline code formatting format */
-code {
+/*code {
     --tw-bg-opacity: 1;
-    background-color: rgb(var(--color-neutral-100)/var(--tw-bg-opacity));
-}
+  background-color: rgb(51 65 85/var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+}*/
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
     content: "";
 }
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before {
     content: "";
 }
-.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)){
+/* .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)){
     --tw-text-opacity: 1;
     color: rgb(var(--color-neutral-700)/var(--tw-text-opacity));
-}
+} */
 
 /* Change note callout color from red to blue */
 div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900{
-  background-color: rgb(219 234 254);
+    --tw-text-opacity: 1;
+    background-color: rgb(191 219 254/ var(--tw-bg-opacity, 1));
+}
+div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900 > span.pr-3.pt-1.text-primary-600.dark\:text-primary-300{
+    --tw-text-opacity: 1;
+    color: rgb(var(--color-primary-600)/var(--tw-text-opacity));
+}
+div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900 > span.dark\:text-neutral-300{
+    --tw-text-opacity: 1;
+    color: rgb(51 65 85/var(--tw-text-opacity));
 }
