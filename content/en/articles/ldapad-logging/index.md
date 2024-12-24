@@ -10,9 +10,7 @@ authors:
   - admin
 
 tags:
-  - Hardware Security
-  - TPM
-  - Windows
+  - bloodyAD
   - Microsoft
 
 categories:
