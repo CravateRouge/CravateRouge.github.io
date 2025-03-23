@@ -3,58 +3,16 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Appearance
-appearance:
-  mode: light
-  color: red
-
 # SEO
 marketing:
   seo:
-    site_type: LocalBusiness
-    local_business_type: 'ProfessionalService'
-    org_name: ''
     description: |
       Renouez avec la sécurité.
       Nous fournissons des services de cybersécurité correspondants à vos besoins.
       De la protection à l'audit en passant par des formations personnalisées, nous fournissons aussi des analyses forensiques et des logiciels de sécurité personnalisés.
-    twitter: 'rouge_cravate'
-  analytics:
-    google_analytics: 'G-64YDD5310R'
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: 'codeva-84l1iAxRFf'
 
 # Site header
 header:
   navbar:
-    enable: true
-    blox: "navbar"
-    align: "center"
-    fixed_to_top: true
-    logo:
-      text: ""
-      # Logo filename in `assets/media/` folder
-      filename: "logo.png"
     button:
-      enable: true
       text: "Contactez-nous"
-      url: "contact/"
-    show_search: true
-    show_theme_chooser: true
-
-# Site footer
-footer:
-  copyright:
-    notice: |
-      © {year} CravateRouge Ltd. All rights reserved.\
-      CravateRouge Limited is a private limited company registered in Hong Kong SAR under the incorporation number 76292843.
-
-# Localization
-locale:
-  date_format: '2 Jan, 2006'
-  time_format: '15:04'

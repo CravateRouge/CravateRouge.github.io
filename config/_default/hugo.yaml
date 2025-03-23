@@ -28,6 +28,7 @@ cascade:
     header:
       navbar:
         enable: true
+    announcement: true
   # Blog section options
   - _target:
       path: /articles/*

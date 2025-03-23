@@ -24,13 +24,6 @@ marketing:
     twitter: 'rouge_cravate'
   analytics:
     google_analytics: 'G-64YDD5310R'
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: 'codeva-84l1iAxRFf'
 
 # Site header
 header:
@@ -40,7 +33,6 @@ header:
     align: "center"
     fixed_to_top: true
     logo:
-      text: ""
       # Logo filename in `assets/media/` folder
       filename: "logo.png"
     button:

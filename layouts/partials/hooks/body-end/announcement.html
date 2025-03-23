@@ -1,0 +1,37 @@
+{{ if .Params.announcement }}
+    {{ $lang := .Language.Lang }}
+    {{ $cta := "Need a hand?" }}
+    {{ $ctaLink := "/contact" }}
+    {{ $contact := "Contact us now" }}
+    {{ if and (ne $lang "") (ne $lang "en") }}
+        {{ if eq $lang "fr" }}
+            {{ $cta = "Besoin d'aide?" }}
+            {{ $contact = "Contactez-nous maintenant" }}
+        {{ else if eq $lang "zh" }}
+            {{ $cta = "需要帮助吗？" }}
+            {{ $contact = "立即联系我们" }}
+        {{ end }}
+        {{ $ctaLink = (printf "/%s/contact" $lang) }}
+    {{ end }}
+    <div id="bottom-banner" tabindex="-1" class="fixed bottom-0 right-4 z-50 flex justify-between w-auto max-w-xs p-4 border border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600 rounded-lg shadow-lg">
+        <div class="flex items-center">
+            <p class="flex items-center text-sm font-normal text-gray-500">
+                <span class="inline-flex p-1 me-3 bg-primary-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center mr-1">
+                     {{ partial "functions/get_icon" (dict "name" "hero/bolt" "attributes" `class="w-3.5 h-3.5 text-primary-500"`) }}
+                    <span class="sr-only">announcement</span>
+                </span>
+                <span> {{ $cta }} <a href="{{ $ctaLink }}" class="flex items-center ms-0 text-sm font-medium text-blue-600 md:ms-1 md:inline-flex hover:underline"> {{ $contact }} <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+    </svg></a></span>
+            </p>
+        </div>
+        <div class="flex items-center">
+            <button onclick="document.getElementById('bottom-banner').style.display='none'" type="button" class="shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span class="sr-only">Close banner</span>
+            </button>
+        </div>
+    </div>
+{{ end }}
