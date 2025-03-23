@@ -17,4 +17,5 @@ sections:
         linkedin: https://www.linkedin.com/company/cravaterouge/
         bluesky: https://bsky.app/profile/cravaterouge.bsky.social
         github: https://github.com/CravateRouge
+        address: CravateRouge Ltd, 23 Thomson Road, Wan Chai, Hong Kong SAR
 ---

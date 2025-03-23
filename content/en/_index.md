@@ -117,7 +117,6 @@ sections:
           features:
             - "Identify weaknesses in your applications with pentests using automated tools and advanced attacks depending of your needs"
             - "Test your resilience against threat actors with attack simulations (red team, insider compromission...)"
-            - "Prices start at $1000 excl. tax"
           # Upload image to `assets/media/` and reference the filename here
           image: audit.png
           button:
@@ -131,7 +130,6 @@ sections:
             - "Raise your teams' safety awareness with mail phishing campaigns"
             - "Learn to develop secured softwares"
             - "Trainings on security topics specific to your needs"
-            - "Trainings start at $3000 excl. tax"
           # Upload image to `assets/media/` and reference the filename here
           image: training.png
           button:
@@ -145,7 +143,6 @@ sections:
             - "Identify which path the threat actor took and secure it"
             - "Evaluate the damages"
             - "Establishing an attacker profile"
-            - "$150/hr excl. tax"
           # Upload image to `assets/media/` and reference the filename here
           image: investigate.png
           button:

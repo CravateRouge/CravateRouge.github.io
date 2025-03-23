@@ -47,7 +47,6 @@ removePathAccents: true
 ############################
 ## ADVANCED
 ############################
-
 build:
   writeStats: true
 enableGitInfo: false
