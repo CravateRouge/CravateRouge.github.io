@@ -49,8 +49,4 @@ To help you with your compliance policy for the General Data Protection Regulati
 - Preliminary consultation to adapt the **Secure Workspace** to your needs (number and type of users, number and type of devices, etc)
 - Gradual roll-out across the entire pre-defined perimeter of users and devices.
 
-### Cost
-- <ins>Installation cost</ins>: base of $1100 excl. tax + $160 excl. tax/user + $540 excl. tax/device.
-- <ins>Monthly subscription</ins>: $55 excl. tax/user + $90 excl. tax/device (including infrastructure maintenance, software updates and support related to **Secure Workspace** technical incidents).
-
 Want to change your solution? Don't worry, **Secure Workspace** can be terminated at any time.

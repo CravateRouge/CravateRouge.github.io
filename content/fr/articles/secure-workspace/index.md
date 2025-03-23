@@ -49,8 +49,4 @@ Pour vous aider dans votre politique de conformité au Règlement Général de P
 - Entretien préalable pour adapter le Secure Workspace aux besoins (nb et types d'utilisateurs, nb et types d'appareils...)
 - Déploiement progressif sur l'ensemble du périmètre d'utilisateurs et d'appareils préalablement défini.
 
-### Modalités financières
-- <ins>Coût d'installation</ins> : base de 1000€ HT + 150€ HT/utilisateur + 500€ HT/appareil.
-- <ins>Abonnement mensuel</ins> : 50€ HT/utilisateur + 80€ HT/appareil (incluant maintenance de l'infrastructure, mises à jour logicielles et support lié aux incidents technique du **Secure Workspace**).
-
 Vous souhaitez changer de solution? Pas de panique, le **Secure Workspace** est résiliable à tout moment.

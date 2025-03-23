@@ -119,7 +119,6 @@ sections:
           features:
             - "根据您的需求 使用自动化工具和高级攻击 通过测试来识别应用程序中的弱点"
             - "利用攻击模拟测试 检验您对威胁源的抵御韧性"
-            - "起价1000美元(不含税)"
           # Upload image to `assets/media/` and reference the filename here
           image: audit.png
           button:
@@ -133,7 +132,6 @@ sections:
             - "通过邮件进行网络钓鱼活动提高团队的安全意识"
             - "学习开发安全软件"
             - "针对您需求的特定安全主题的培训"
-            - "培训起价3000美元(不含税)"
           # Upload image to `assets/media/` and reference the filename here
           image: training.png
           button:
@@ -147,7 +145,6 @@ sections:
             - "确定威胁行为者所走的路径并加以保护"
             - "评估损失"
             - "建立攻击者档案"
-            - "150美元/小时(不含税)"
           # Upload image to `assets/media/` and reference the filename here
           image: investigate.png
           button:

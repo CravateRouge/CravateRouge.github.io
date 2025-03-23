@@ -118,7 +118,6 @@ sections:
           features:
             - "Identifiez les faiblesses de vos applications via des pentests en utilisant des outils automatisés et/ou des attaques avancées en fonction de vos besoins"
             - "Vérifiez votre robustesse face aux cybercriminels en réalisant des simulations d'attaques (red team, menace interne...)"
-            - "A partir de 906€ HT"
           # Upload image to `assets/media/` and reference the filename here
           image: audit.png
           button:
@@ -132,7 +131,6 @@ sections:
             - "Sensibilisez vos équipes aux menaces avec des campagnes de phishing mail"
             - "Apprenez à développer de manière sécurisée"
             - "Formations sur des sujet cyber spécifiques à vos besoins"
-            - "Formations à partir de 2800€ HT"
           # Upload image to `assets/media/` and reference the filename here
           image: training.png
           button:
@@ -146,7 +144,6 @@ sections:
             - "Identifiez les chemins empruntés par les cybercriminels et sécurisez-les"
             - "Évaluez l'impact"
             - "Profilez l'attaquant"
-            - "136€ HT l'heure"
           # Upload image to `assets/media/` and reference the filename here
           image: investigate.png
           button:
