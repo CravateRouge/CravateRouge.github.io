@@ -5,7 +5,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "1rem"
 
 sections:
   - block: hero
@@ -40,6 +40,11 @@ sections:
           size: "auto;background-repeat:repeat"
           filters:
             brightness: 0.5
+  - block: resume-biography-3
+    id: about
+    content:
+      username: admin
+
   - block: stats
     content:
       items:
@@ -49,32 +54,43 @@ sections:
         - statistic: "6年+"
           description: |
             实地经验
-        - statistic: "1k5+"
+        - statistic: "1500+"
           description: |
-            GitHub
-            上我们安全工具的受欢迎程度
-
+            安全专家认可<a class="underline hover:no-underline" href="https://github.com/CravateRouge/bloodyAD" target="_blank" rel="noopener noreferrer">我们的工作</a>
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
+  
+  - block: collection
+    content:
+      title: 他们谈论我们
+      text: 看看行业对我们的评价
+      filters:
+        folders:
+          - reference
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 2
+
   - block: features
     id: services
     content:
-      title: 服务
+      title: 我们的服务
       text: 🧱 构建你的安全成熟度 🧱
       items:
+        - name: 审计
+          icon: bolt
+          description: 利用渗透测试评估您的安全体系验证其防范攻击者的能力
         - name: 安全的工作空间
           icon: cpu-chip
           description: 全新安全解决方案 守护您的数字工作空间
         - name: 保护
           icon: lock-closed
           description: 通过添加适应基础设施的措施 强化您的系统
-        - name: 审计
-          icon: bolt
-          description: 利用渗透测试评估您的安全体系验证其防范攻击者的能力
         - name: 培养
           icon: academic-cap
           description: 网络安全对你来说将不再有任何秘密
@@ -84,6 +100,9 @@ sections:
         - name: 软件
           icon: beaker
           description: 获取根据您的需求量身定制的保护、检测和审核工作
+      design:
+      css_class: "bg-gray-100 dark:bg-gray-900"
+
   - block: cta-image-paragraph
     id: services-details
     content:
@@ -181,18 +200,6 @@ sections:
   #     spacing:
   #       # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #       padding: ["6rem", 0, 0, 0]
-
-  - block: logos
-    content:
-      title: "他们选择了我们"
-      items:
-        - logo: "axa.png"
-        - logo: "bnp.png"
-        - logo: "europe.png"
-    design:
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
 
   - block: cta-card
     content:

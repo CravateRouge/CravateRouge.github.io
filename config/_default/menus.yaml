@@ -24,3 +24,6 @@ main:
   - name: Articles
     url: articles/
     weight: 40
+  - name: About
+    url: /#about
+    weight: 50

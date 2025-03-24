@@ -5,7 +5,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "1rem"
 
 sections:
   - block: hero
@@ -38,6 +38,11 @@ sections:
           size: "auto;background-repeat:repeat"
           filters:
             brightness: 0.5
+  - block: resume-biography-3
+    id: about
+    content:
+      username: admin
+
   - block: stats
     content:
       items:
@@ -47,32 +52,40 @@ sections:
         - statistic: "6Yrs+"
           description: |
             Field experience
-        - statistic: "1k5+"
+        - statistic: "1500+"
           description: |
-            GitHub stars  
-            for our security tools
-
+            Security experts
+            <a class="underline hover:no-underline" href="https://github.com/CravateRouge/bloodyAD" target="_blank" rel="noopener noreferrer">apppreciating our work</a>
     design:
-      # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
+
+  - block: collection
+    content:
+      title: They talk about us
+      text: See what the Industry is saying about us
+      filters:
+        folders:
+          - reference
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 2
+
   - block: features
     id: services
     content:
-      title: Services
+      title: Our Services
       text: 🧱 Build your security maturity 🧱
       items:
+        - name: Audit
+          icon: bolt
+          description: Test your security with pentests to see if it can resist to threat actors!
         - name: Secure Workspace
           icon: cpu-chip
           description: Our new solution to keep your digital workspace secured
         - name: Protect
           icon: lock-closed
           description: Harden your systems by adding measures adapted to your infrastructure
-        - name: Audit
-          icon: bolt
-          description: Test your security with pentests to see if it can resist to threat actors!
         - name: Training
           icon: academic-cap
           description: Cybersecurity will have no secrets for you!
@@ -82,6 +95,9 @@ sections:
         - name: Softwares
           icon: beaker
           description: Get protection, detection and audit tools tailored to your needs
+    design:
+      css_class: "bg-gray-100 dark:bg-gray-900"
+
   - block: cta-image-paragraph
     id: services-details
     content:
@@ -180,17 +196,17 @@ sections:
   #       # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #       padding: ["6rem", 0, 0, 0]
 
-  - block: logos
-    content:
-      title: "They chose us"
-      items:
-        - logo: "axa.png"
-        - logo: "bnp.png"
-        - logo: "europe.png"
-    design:
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
+  # - block: logos
+  #   content:
+  #     title: "They chose us"
+  #     items:
+  #       - logo: "axa.png"
+  #       - logo: "bnp.png"
+  #       - logo: "europe.png"
+  #   design:
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: ["1rem", 0, "1rem", 0]
 
   - block: cta-card
     content:

@@ -17,6 +17,6 @@ header:
   navbar:
     logo:
       # Logo filename in `assets/media/` folder
-      filename: "logo-zh.png"
+      filename: "logo-zh.svg"
     button:
       text: "联络我们"

@@ -29,3 +29,8 @@ div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900 > span.da
     --tw-text-opacity: 1;
     color: rgb(51 65 85/var(--tw-text-opacity));
 }
+
+/* logo resize */
+svg#logo{	
+    height: var(--navbar-height);
+}

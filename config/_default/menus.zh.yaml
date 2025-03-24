@@ -22,5 +22,8 @@ main:
     url: /#services
     weight: 30
   - name: 文章
-    url: "../articles/"
+    url: articles/
     weight: 40
+  - name: 关于
+    url: /#about
+    weight: 50

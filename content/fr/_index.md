@@ -5,7 +5,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "1rem"
 
 sections:
   - block: hero
@@ -38,6 +38,11 @@ sections:
           size: "auto;background-repeat:repeat"
           filters:
             brightness: 0.5
+  - block: resume-biography-3
+    id: about
+    content:
+      username: admin
+
   - block: stats
     content:
       items:
@@ -47,32 +52,41 @@ sections:
         - statistic: "6Ans+"
           description: |
             D'expérience sur le terrain
-        - statistic: "1k5+"
+        - statistic: "1500+"
           description: |
-            GitHub stars  
-            pour nos outils de sécurité
-
+            Experts sécurité <a class="underline hover:no-underline" href="https://github.com/CravateRouge/bloodyAD" target="_blank" rel="noopener noreferrer">apprécient notre travail</a>
     design:
-      # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
-      # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
+
+  - block: collection
+    content:
+      title: On parle de nous
+      text: Découvrez ce que l'industrie dit de nous
+      filters:
+        folders:
+          - reference
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 2
+
   - block: features
     id: services
     content:
-      title: Services
+      title: Nos Services
       text: 🧱 Construisez une infrastructure robuste 🧱
       items:
+        - name: Audit
+          icon: bolt
+          description: Testez la résistance de votre infrastructure face aux attaques!
         - name: Secure Workspace
           icon: cpu-chip
           description: Notre nouvelle solution pour un espace numérique d'entreprise sécurisé
         - name: Protection
           icon: lock-closed
           description: Renforcez vos systèmes en implémentant des mesures adaptées
-        - name: Audit
-          icon: bolt
-          description: Testez la résistance de votre infrastructure face aux attaques!
         - name: Formation
           icon: academic-cap
           description: Devenez un As de la cybersécurité!
@@ -82,6 +96,9 @@ sections:
         - name: Logiciels
           icon: beaker
           description: Obtenez des outils de protection, détection et audit correspondants à vos besoins
+    design:
+      css_class: "bg-gray-100 dark:bg-gray-900"
+
   - block: cta-image-paragraph
     id: services-details
     content:
@@ -180,18 +197,6 @@ sections:
   #     spacing:
   #       # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #       padding: ["6rem", 0, 0, 0]
-
-  - block: logos
-    content:
-      title: "Ils nous ont fait confiance"
-      items:
-        - logo: "axa.png"
-        - logo: "bnp.png"
-        - logo: "europe.png"
-    design:
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
 
   - block: cta-card
     content:

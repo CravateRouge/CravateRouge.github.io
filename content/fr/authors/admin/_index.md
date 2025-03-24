@@ -17,15 +17,10 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Expert en cybersécurité
-
-# Organizations/Affiliations to show in About widget
-organizations:
-  - name: "CravateRouge Ltd"
-    url: https://cravaterouge.com/
+role: Directeur & Expert sécurité
 
 # Short bio (displayed in user profile at end of posts)
-bio: Passionné en cybersécurité, spécialisé dans les technologies Active Directory/Cloud Azure et intervenant à la Black Hat US.
+bio: Passionné en cybersécurité, spécialisé dans les technologies Microsoft 365/Active Directory et intervenant à la Black Hat US.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -49,15 +44,13 @@ profiles:
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
-
-# Author's website URL
-website: ""
 ---
 
-Expert passionné en cybersécurité, spécialisé dans les technologies Active Directory et cloud Azure. 
+## Qui sommes nous?
+Je m'appelle Baptiste Crépin, directeur et expert sécurité chez CravateRouge Ltd.
 
-Diplômé d’un master en cybersécurité de l’Université de Paris-Saclay, il a débuté sa carrière en 2018 en tant qu’auditeur pour la société de consulting CGI. Il a ensuite rejoint AXA en tant qu'opérateur Red Team.
+Mon aventure en cybersécurité a débutée avec un Master de l'Université Paris-Saclay. Par la suite, j'ai acquis de l'expérience en tant qu'opérateur red team chez AXA, en me spécialisant sur les environments Microsoft. Ce poste m'a permis de simuler des attaques réelles pour identifier et corriger les vulnérabilités.
 
-Son parcours professionnel lui a donné l’opportunité de travailler sur une variété de technologies (Web, mobiles, systèmes...). Il a également formé de nombreux professionnels à la cybersécurité, notamment dans le développement sécurisé.
+Je partage aussi mes recherches et développe des outils afin d'aider les experts en cybersécurité à vous fournir la meilleure protection. Par ailleurs, j'ai eu la chance de présenter l'un de mes outils lors de la [Black Hat Vegas](https://www.blackhat.com/us-22/arsenal/schedule/#bloodyad-26883), l'un des plus grands événements de sécurité informatique au monde.
 
-En parallèle il contribue à la communauté cyber en développant des outils de sécurité opensource et en partageant son expertise à des conférences comme la Black Hat de Las Vegas 2022.
+C'est pourquoi j'ai décidé de fonder CravateRouge Ltd, afin de mettre mon expertise directement à votre service. Avec des offres de cybersécurité personnalisés et complètes, spécialisées dans les produits Microsoft, nous veillons à ce que votre infrastrucure bénéficie de la meilleure protection. Faites confiance à notre équipe pour sécuriser votre avenir.
