@@ -1,5 +1,5 @@
 ---
-title: '家 | 卡瓦特网络安全公司'
+title: '家'
 date: 2024-10-30
 type: landing
 
