@@ -11,27 +11,35 @@ baseURL: 'https://cravaterouge.com/' # Website URL
 ############################
 
 cascade:
-  # Blog post options
-  - _target:
-      path: /articles/**
+  - target:
+      path: "/articles/**"
       kind: page
+    announcment: true
+    show_related: true
+    show_date_updated: true
+    commentable: true
     pager: true
     editable: true
-    hide_date: false
-    show_date_updated: true
-    reading_time: true
-    commentable: true
-    show_related: true
-    share: true
-    # Just use Breadcrumb for navigation on blog post pages?
+  - target:
+      path: "{/reference,/reference/**,/authors,/authors/**,/services}"
+    _build:
+      render: never
+  - target:
+      path: "{/privacy,/terms,/services/**}"
+    share: false
+    reading_time: false
+    show_related: false
+    show_date: false
+    show_date_updated: false
     show_breadcrumb: false
-    header:
-      navbar:
-        enable: true
-    announcement: true
-  # Blog section options
-  - _target:
-      path: /articles/*
+    commentable: false
+    pager: false
+    profile: false
+  - target:
+      path: "{/privacy,/terms}"
+    private: true
+  - target:
+      path: "/articles/*"
       kind: section
     # Set the listing view
     view: date-title-summary
@@ -52,7 +60,6 @@ build:
   writeStats: true
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>

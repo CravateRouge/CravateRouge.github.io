@@ -34,7 +34,7 @@ header:
     fixed_to_top: true
     logo:
       # Logo filename in `assets/media/` folder
-      filename: "logo.png"
+      filename: "logo.svg"
     button:
       enable: true
       text: "Contact Us"

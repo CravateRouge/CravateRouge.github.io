@@ -5,26 +5,89 @@
 # Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  contentDir: content/en
+  weight: 1
+  menus:
+    main:
+      - name: Home
+        url: "#top"
+        weight: 10
+      - name: Services
+        weight: 30
+        url: "#services"
+      #   hasChildren: true
+      # - parent: Services
+      #   name: Phishing Simulation
+      #   url: /services/phishing
+      - name: Articles
+        url: /articles
+        weight: 40
+      - name: About
+        url: "#about"
+        weight: 50
 
 fr:
   languageCode: fr-FR
-  contentDir: content/fr
+  weight: 2
+  menus:
+    main:
+      - name: Accueil
+        url: "#top"
+        weight: 10
+      - name: Services
+        url: "#services"
+        weight: 30
+      - name: Articles
+        url: /articles
+        weight: 40
+      - name: À propos
+        url: "#about"
+        weight: 50
+  params:
+    # SEO
+    marketing:
+      seo:
+        description: |
+          Renouez avec la sécurité.
+          Nous fournissons des services de cybersécurité correspondants à vos besoins.
+          De la protection à l'audit en passant par des formations personnalisées, nous fournissons aussi des analyses forensiques et des logiciels de sécurité personnalisés.
+    # Site header
+    header:
+      navbar:
+        button:
+          text: "Contactez-nous"
 
 zh:
   languageCode: zh-Hans
-  contentDir: content/zh
-
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+  weight: 2
+  title: 卡瓦特网络安全公司
+  menus:
+    main:
+      - name: 家
+        url: "#top"
+        weight: 10
+      - name: 服务
+        url: "#services"
+        weight: 30
+      - name: 文章
+        url: /articles
+        weight: 40
+      - name: 关于
+        url: "#about"
+        weight: 50
+  params:
+    # SEO
+    marketing:
+      seo:
+        description: |
+          严格守护你的网络安全。在卡瓦特网络安全公司，我们会提供根据您的需求量身定制的网络安全服务。
+          从保护到审计，我们还提供培训、取证和定制安全软件。
+      verification:
+        baidu: 'codeva-84l1iAxRFf'
+    # Site header
+    header:
+      navbar:
+        logo:
+          # Logo filename in `assets/media/` folder
+          filename: "logo-zh.svg"
+        button:
+          text: "联络我们"
