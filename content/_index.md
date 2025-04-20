@@ -151,7 +151,7 @@ sections:
             text: Learn more
             url: contact/
           id: phishingsum
-        - title: Microsoft 365 Integration
+        - title: Microsoft 365 & Azure Integration
           text: All-in-one to increase your productivity and security
           feature_icon: cpu-chip
           features:
@@ -162,16 +162,14 @@ sections:
           image: secureWorkspace.png
           button:
             text: More info
-            url: articles/secure-workspace/
+            url: services/integration/
           id: m365sum
         - title: Tailored services
           text: A specific cybersecurity need?
           feature_icon: beaker
-          features:
-            - Tell us your project
           image: craft.png
           button:
-            text: Ask quotation
+            text: Tell us your project
             url: contact/
           id: tailoredsum
 

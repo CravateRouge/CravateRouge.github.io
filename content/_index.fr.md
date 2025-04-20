@@ -150,7 +150,7 @@ sections:
           button:
             text: En savoir plus
             url: contact/
-        - title: Intégration Microsoft 365
+        - title: Intégration Microsoft 365 & Azure
           text: Un tout-en-un pour améliorer votre productivité et sécurité
           feature_icon: cpu-chip
           features:
@@ -161,16 +161,14 @@ sections:
           image: secureWorkspace.png
           button:
             text: En savoir plus
-            url: articles/secure-workspace/
+            url: services/integration
           id: m365sum
         - title: Services sur mesure
           text: Un besoin cyber spécifique?
           feature_icon: beaker
-          features:
-            - Faites nous part de votre projet
           image: craft.png
           button:
-            text: Demandez un devis
+            text: Faites nous part de votre projet
             url: contact/
           id: tailoredsum
 

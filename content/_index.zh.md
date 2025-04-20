@@ -92,7 +92,7 @@ sections:
           icon: envelope
           description: |
             [通过实施强大的网络钓鱼模拟训练您的员工识别网络威胁](#phishingsum)
-        - name: Microsoft 365 集成
+        - name: Microsoft 365 & Azure 集成
           icon: cpu-chip
           description: |
             [将 M365 和 Azure 云集成到您的业务中，以提高生产力和安全性](#m365sum)
@@ -165,16 +165,14 @@ sections:
           image: secureWorkspace.png
           button:
             text: "更多信息"
-            url: "../articles/secure-workspace/"
+            url: services/integration/
           id: m365sum
         - title: 定制服务
           text: 有特定的网络安全需求？
           feature_icon: beaker
-          features:
-            - 告诉我们您的项目
           image: craft.png
           button:
-            text: "询问报价"
+            text: 告诉我们您的项目
             url: "contact/"
           id: tailoredsum
 

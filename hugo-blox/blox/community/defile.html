@@ -1,0 +1,45 @@
+{{/* Hugo Blox: Experience */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto">
+
+<div class="flex flex-col lg:gap-x-6 w-100 px-6 sm:px-0">
+
+<div class="w-full">
+  {{ with $title }}
+  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</h3>
+  {{ end }}
+  <ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {{ range $idx, $item := $block.content.items }}
+    <li class="mb-10 ms-6">
+      {{ with .icon }}
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+          {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-5 h-5 text-primary-800 dark:text-primary-300"`)  }}
+         </span>
+      {{ end }}
+      <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white text-wrap">{{.name}}</h3>
+
+      <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 text-wrap prose prose-slate dark:prose-invert">{{.description}}</div>
+
+      {{ with .button }}
+      <a href="{{.url}}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+      </svg> {{.text}}</a>
+      {{ end }}
+
+    </li>
+    {{ end }}
+  </ol>
+</div>
+
+</div>
+
+</div>
