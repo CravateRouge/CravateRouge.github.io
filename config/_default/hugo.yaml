@@ -14,7 +14,7 @@ cascade:
   - target:
       path: "/articles/**"
       kind: page
-    announcment: true
+    announcement: true
     show_related: true
     show_date_updated: true
     commentable: true
