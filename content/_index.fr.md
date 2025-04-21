@@ -113,8 +113,8 @@ sections:
             - "Vérifiez votre robustesse face aux cybercriminels en réalisant des simulations d'attaques (red team, menace interne...)"
           image: audit.png
           button:
-            text: Commandez un audit
-            url: contact/
+            text: Choisissez votre audit
+            url: services/audit
           id: auditsum
         - title: Protégez votre infrastructure
           text: Renforcez vos systèmes en implémentant des mesures adaptées

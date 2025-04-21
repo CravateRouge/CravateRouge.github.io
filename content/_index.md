@@ -113,8 +113,8 @@ sections:
             - "Test your resilience against threat actors with attack simulations (red team, insider compromission...)"
           image: audit.png
           button:
-            text: Order Now
-            url: contact/
+            text: Choose your audit type
+            url: services/audit/
           id: auditsum
         - title: Protect your infrastructure
           text: Harden your systems by adding measures adapted to your infrastructure

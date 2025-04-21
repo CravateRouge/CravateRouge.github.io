@@ -77,7 +77,7 @@ sections:
           description: |
             Microsoft frequently introduces new features, apps, and integrations into the M365 ecosystem, ensuring that businesses have access to the latest technology advancements.
         - name: Unified Endpoint Management
-          icon: tv
+          icon: computer-desktop
           description: |
             With Microsoft Intune, businesses can manage and secure company data on personal and company-owned devices, ensuring that devices remain compliant with company policies. Experience the familiarity of your desktop and operating system, no matter the device.
         - name: Integration with Azure Cloud Services

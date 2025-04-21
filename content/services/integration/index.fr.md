@@ -75,7 +75,7 @@ sections:
           description: |
             Microsoft introduit régulièrement de nouvelles fonctionnalités dans l'écosystème M365, garantissant aux entreprises les dernières avancées technologiques.
         - name: Gestion unifiée des appareils
-          icon: tv
+          icon: computer-desktop
           description: |
             Avec Microsoft Intune, gérez et sécurisez les données de l'entreprise sur des appareils personnels et professionnels, tout en assurant leur conformité avec les politiques de l'entreprise.
         - name: Intégration avec les services cloud Azure

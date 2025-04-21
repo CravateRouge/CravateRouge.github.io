@@ -49,7 +49,7 @@ highlight_name: true
 ## 我们是谁？
 我是李白兔，卡瓦特网络安全公司的首席执行官和安全专家。
 
-我在[巴黎-萨克雷大学](https://www.shanghairanking.com/institution/paris-saclay-university)获得硕士学位后，开始了我的网络安全之旅。随后，我在[工银安蒸人寿](https://www.icbc-axa.com/)担任红队操作员，专注于微软环境。这一角色让我有机会模拟真实世界的攻击，以识别和减轻漏洞。
+我在[巴黎-萨克雷大学](https://www.shanghairanking.com/institution/paris-saclay-university)获得硕士学位后，开始了我的网络安全之旅。随后，我在[工银安盛人寿](https://www.icbc-axa.com/)担任红队操作员，专注于微软环境。这一角色让我有机会模拟真实世界的攻击，以识别和减轻漏洞。
 
 此外，我分享我的研究并开发先进的工具，帮助安全专家为您提供最前沿的保护。特别是，我有幸在世界上最大的计算机安全事件之一[拉斯维加斯黑帽大会](https://www.blackhat.com/us-22/arsenal/schedule/#bloodyad-26883)上展示了我的一款工具。
 

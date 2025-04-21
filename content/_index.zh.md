@@ -116,8 +116,8 @@ sections:
             - "利用攻击模拟测试 检验您对威胁源的抵御韧性"
           image: audit.png
           button:
-            text: "立即订购"
-            url: "contact/"
+            text: "了解更多"
+            url: "services/audit/"
           id: auditsum
         - title: 保护您的基础设施
           text: 通过添加适应基础设施的措施 强化您的系统

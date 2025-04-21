@@ -75,7 +75,7 @@ sections:
           description: |
             Microsoft 经常在 M365 生态系统中引入新功能和集成，确保企业能够使用最新的技术进步。
         - name: 统一终端管理
-          icon: tv
+          icon: computer-desktop
           description: |
             借助 Microsoft Intune，企业可以管理和保护个人和公司设备上的数据，确保设备符合公司政策。
         - name: 与 Azure 云服务集成

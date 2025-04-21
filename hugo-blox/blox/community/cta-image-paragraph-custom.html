@@ -5,15 +5,26 @@
 {{/* Initialise */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
-
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
 <div>
+  <div class="max-w-screen-md flex flex-col justify-center mx-auto py-8">
+    {{ with $title }}
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+    {{ end }}
+    {{ with $text }}
+    <p class="text-gray-500 sm:text-xl dark:text-gray-400 text-center">{{.}}</p>
+    {{ end }}
+  </div>
   {{ range $idx, $item := $block.content.items }}
   {{ $title := .title | emojify | $page.RenderString }}
   {{ $text := .text | emojify | $page.RenderString }}
   {{ $image_path := path.Join "media" .image }}
   {{ $image := resources.GetMatch $image_path }}
   {{ with $image }}
-    {{ $image = $image.Process "Resize 800x webp" }}
+    {{ if ne $image.MediaType.SubType "svg" }}
+      {{ $image = $image.Process "Resize 800x webp" }}
+    {{ end}}
   {{ else }}
     {{ errorf "%s uses the `cta-image-paragraph` blox which specifies a non-existent `image` at `assets/%s`. Please add the image to this folder and try again." $page.File.Path $image_path }}
   {{ end }}

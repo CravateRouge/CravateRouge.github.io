@@ -18,6 +18,9 @@ en:
       - parent: Services
         name: M365 & Azure Integration
         url: /services/integration
+      - parent: Services
+        name: Security Audit
+        url: /services/audit
       # - parent: Services
       #   name: Phishing Simulation
       #   url: /services/phishing
@@ -43,6 +46,9 @@ fr:
       - parent: Services
         name: Intégration M365 & Azure
         url: /services/integration
+      - parent: Services
+        name: Audit de sécurité
+        url: /services/audit
       - name: Articles
         url: /articles
         weight: 40
@@ -79,6 +85,9 @@ zh:
       - parent: 服务
         name: M365 & Azure 集成
         url: /services/integration
+      - parent: 服务
+        name: 审计
+        url: /services/audit
       - name: 文章
         url: /articles
         weight: 40
