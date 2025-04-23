@@ -6,8 +6,8 @@ title: 李白兔
 name_pronunciation: ""
 
 # Full name (for SEO)
-first_name: Baptiste
-last_name: Crépin
+first_name: 白兔
+last_name: 李
 
 # Status emoji
 status:

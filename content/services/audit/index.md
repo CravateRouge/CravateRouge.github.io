@@ -97,7 +97,7 @@ sections:
 
   - block: cta-card
     content: 
-      title: Find the Right Security and Pen Testing Services for Your Needs
+      title: Find the Right Security and Pentesting Services for Your Needs
       text: |
         As cybersecurity breaches continue to threaten the stability of companies in every industry, it’s important to find the right vendor to perform a valid and beneficial assessment of your security. We understand every organization has unique security objectives and challenges, and we strive to tailor our services to meet your needs.
       button:
