@@ -14,8 +14,14 @@
 
 <div class="w-full">
   {{ with $title }}
-  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</h3>
+  <div class="mb-6 mt-4">
+  <h3 class="text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</h3>
+  {{ with $text }}
+  <p class="text-gray-500 sm:text-xl dark:text-gray-400">{{.}}</p>
   {{ end }}
+  </div>
+  {{ end }}
+
   <ol class="relative border-s border-gray-200 dark:border-gray-700">
     {{ range $idx, $item := $block.content.items }}
     <li class="mb-10 ms-6">

@@ -16,14 +16,17 @@ en:
         url: "#services"
         hasChildren: true
       - parent: Services
+        name: Security Audit
+        weight: 31
+        url: /services/audit
+      - parent: Services
         name: M365 & Azure Integration
+        weight: 32
         url: /services/integration
       - parent: Services
-        name: Security Audit
-        url: /services/audit
-      # - parent: Services
-      #   name: Phishing Simulation
-      #   url: /services/phishing
+        name: Phishing Simulation
+        weight: 35
+        url: /services/phishing
       - name: Articles
         url: /articles
         weight: 40
@@ -44,11 +47,17 @@ fr:
         weight: 30
         hasChildren: true
       - parent: Services
+        name: Audit de sécurité
+        weight: 31
+        url: /services/audit
+      - parent: Services
         name: Intégration M365 & Azure
+        weight: 32
         url: /services/integration
       - parent: Services
-        name: Audit de sécurité
-        url: /services/audit
+        name: Simulation de Phishing
+        weight: 35
+        url: /services/phishing
       - name: Articles
         url: /articles
         weight: 40
@@ -83,11 +92,17 @@ zh:
         weight: 30
         hasChildren: true
       - parent: 服务
+        name: 审计
+        weight: 31
+        url: /services/audit
+      - parent: 服务
         name: M365 & Azure 集成
+        weight: 32
         url: /services/integration
       - parent: 服务
-        name: 审计
-        url: /services/audit
+        name: 钓鱼模拟
+        weight: 35
+        url: /services/phishing
       - name: 文章
         url: /articles
         weight: 40

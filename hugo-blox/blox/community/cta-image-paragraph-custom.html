@@ -7,6 +7,10 @@
 {{ $block := .wcBlock }}
 {{ $title := $block.content.title | emojify | $page.RenderString }}
 {{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $parity := 0 }}
+{{ if eq $block.parity "odd" }}
+  {{ $parity = 1 }}
+{{ end }}
 <div>
   <div class="max-w-screen-md flex flex-col justify-center mx-auto py-8">
     {{ with $title }}
@@ -28,6 +32,7 @@
   {{ else }}
     {{ errorf "%s uses the `cta-image-paragraph` blox which specifies a non-existent `image` at `assets/%s`. Please add the image to this folder and try again." $page.File.Path $image_path }}
   {{ end }}
+  {{ $idx = add $idx $parity }}
 <div id="{{.id}}" {{ if not (modBool $idx 2)}}class="{{$block.design.css_class_primary}}"{{end}}>
   <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
     <img class="w-full" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}" {{ if (modBool $idx 2)}}style="order: 1"{{end}}>
