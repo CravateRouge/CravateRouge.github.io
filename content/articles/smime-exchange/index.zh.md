@@ -1,6 +1,6 @@
 ---
-title: "Implementing S/MIME with Exchange Online and OWA"
-summary: "Implementing S/MIME with Exchange Online and OWA for secure email communications"
+title: "在Exchange Online和OWA中实现S/MIME"
+summary: "在Exchange Online和OWA中实现S/MIME以确保电子邮件通信的安全"
 date: 2024-11-14
 
 authors:
