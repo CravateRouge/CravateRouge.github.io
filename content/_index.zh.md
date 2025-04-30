@@ -95,11 +95,11 @@ sections:
         - name: Microsoft 365 & Azure 集成
           icon: cpu-chip
           description: |
-            [将 M365 和 Azure 云集成到您的业务中，以提高生产力和安全性](#m365sum)
+            [将 M365 和 Azure 云集成到您的业务中 以提高生产力和安全性](#m365sum)
         - name: 定制服务
           icon: beaker
           description: |
-            [如果您有特定需求，请告知我们](#tailoredsum)
+            [如果您有特定需求 请告知我们](#tailoredsum)
       design:
       css_class: "bg-gray-100 dark:bg-gray-900"
 
@@ -155,7 +155,7 @@ sections:
             url: services/phishing
           id: phishingsum
         - title: Microsoft 365 集成
-          text: 一体化解决方案，提高您的生产力和安全性
+          text: 一体化解决方案 提高您的生产力和安全性
           feature_icon: cpu-chip
           features:
             - "统一并加强访问权限"

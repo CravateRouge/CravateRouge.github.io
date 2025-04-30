@@ -44,7 +44,9 @@ sections:
     id: types
     content:
       title: 最常见的钓鱼类型
-      text: "在已知的数百种钓鱼骗局中，以下是四种最常见的类型："
+      text: |
+        在已知的数百种钓鱼骗局中\
+        以下是四种最常见的类型
       items:
         - name: 电子邮件钓鱼
           icon: envelope
