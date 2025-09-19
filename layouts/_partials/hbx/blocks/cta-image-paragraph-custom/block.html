@@ -17,7 +17,7 @@
     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
     {{ end }}
     {{ with $text }}
-    <p class="text-gray-500 sm:text-xl dark:text-gray-400 text-center">{{.}}</p>
+    <p class="text-gray-700 sm:text-xl dark:text-gray-400 text-center">{{.}}</p>
     {{ end }}
   </div>
   {{ range $idx, $item := $block.content.items }}
@@ -38,7 +38,7 @@
     <img class="w-full" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}" {{ if (modBool $idx 2)}}style="order: 1"{{end}}>
     <div class="mt-4 md:mt-0">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{$title}}</h2>
-      <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{{$text}}</p>
+      <p class="mb-6 font-light text-gray-700 md:text-lg dark:text-gray-400">{{$text}}</p>
       {{ $icon := .feature_icon | default "check" }}
       {{ if .features }}
       <ul>

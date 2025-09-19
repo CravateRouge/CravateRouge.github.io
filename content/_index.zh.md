@@ -39,6 +39,8 @@ sections:
     id: about
     content:
       username: admin
+      headings:
+        about: 我们是谁？
 
   - block: stats
     content:

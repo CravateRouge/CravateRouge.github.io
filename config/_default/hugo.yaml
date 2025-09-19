@@ -22,7 +22,7 @@ cascade:
     editable: true
   - target:
       path: "{/reference,/reference/**,/authors,/authors/**,/services}"
-    _build:
+    build:
       render: never
   - target:
       path: "{/privacy,/terms,/services/**}"

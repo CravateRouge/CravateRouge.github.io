@@ -45,8 +45,6 @@ profiles:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-
-## 我们是谁？
 我是李白兔，卡瓦特网络安全公司的首席执行官和安全专家。
 
 我在[巴黎-萨克雷大学](https://www.shanghairanking.com/institution/paris-saclay-university)获得硕士学位后，开始了我的网络安全之旅。随后，我在[工银安盛人寿](https://www.icbc-axa.com/)担任红队操作员，专注于微软环境。这一角色让我有机会模拟真实世界的攻击，以识别和减轻漏洞。

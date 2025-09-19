@@ -48,7 +48,6 @@ highlight_name: true
 # Author's website URL
 website: ""
 ---
-## Who are we?
 I am Baptiste Crépin, CEO and security expert at CravateRouge Ltd.
 
 I began my journey into cybersecurity with a Master's degree from [Paris-Saclay University](https://www.shanghairanking.com/institution/paris-saclay-university). Following this, I gained extensive experience as a red team operator at [AXA Insurance](https://www.axa.com/en/about-us/axa-worldwide) specializing in Microsoft environments. This role gave me the opportunity to simulate real-world attacks to identify and mitigate vulnerabilities.

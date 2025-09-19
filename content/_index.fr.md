@@ -37,6 +37,8 @@ sections:
     id: about
     content:
       username: admin
+      headings:
+        about: Qui sommes nous?
 
   - block: stats
     content:

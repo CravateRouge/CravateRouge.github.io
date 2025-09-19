@@ -45,8 +45,6 @@ profiles:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-
-## Qui sommes nous?
 Je m'appelle Baptiste Crépin, directeur et expert sécurité chez CravateRouge Ltd.
 
 Mon aventure en cybersécurité a débutée avec un Master de l'Université Paris-Saclay. Par la suite, j'ai acquis de l'expérience en tant qu'opérateur red team chez AXA, en me spécialisant sur les environments Microsoft. Ce poste m'a permis de simuler des attaques réelles pour identifier et corriger les vulnérabilités.

@@ -21,9 +21,9 @@ div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900{
     --tw-text-opacity: 1;
     background-color: rgb(191 219 254/ var(--tw-bg-opacity, 1));
 }
+/* Change note callout icon color from light red to dark red in dark mode */
 div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900 > span.pr-3.pt-1.text-primary-600.dark\:text-primary-300{
-    --tw-text-opacity: 1;
-    color: rgb(var(--color-primary-600)/var(--tw-text-opacity));
+    color: var(--color-primary-600);
 }
 div.flex.px-4.py-3.mb-6.rounded-md.bg-primary-100.dark\:bg-primary-900 > span.dark\:text-neutral-300{
     --tw-text-opacity: 1;
