@@ -84,7 +84,7 @@ DEL:c9e8a129-f77f-4159-b700-3c8fd06963fe
 [...]
 ```
 
-To restore objects, the principal should have:
+To [restore objects](https://learn.microsoft.com/en-us/windows/win32/ad/restoring-deleted-objects), the principal should have:
 - **Restore Tombstoned** right on the domain object
 - **Generic Write** right on the deleted object
 - **Create Child** right on the OU used for restoration  

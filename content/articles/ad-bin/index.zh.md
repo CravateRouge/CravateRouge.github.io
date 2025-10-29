@@ -84,7 +84,7 @@ DEL:c9e8a129-f77f-4159-b700-3c8fd06963fe
 [...]
 ```
 
-要恢复对象，主体需具备：
+[要恢复对象](https://learn.microsoft.com/en-us/windows/win32/ad/restoring-deleted-objects)，主体需具备：
 - 域对象上的**Restore Tombstoned**权限
 - 已删除对象上的**Generic Write**权限
 - 用于恢复的OU上的**Create Child**权限  

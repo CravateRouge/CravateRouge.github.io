@@ -84,7 +84,7 @@ DEL:c9e8a129-f77f-4159-b700-3c8fd06963fe
 [...]
 ```
 
-Pour restaurer des objets, le principal doit avoir :
+Pour [restaurer des objets](https://learn.microsoft.com/en-us/windows/win32/ad/restoring-deleted-objects), le principal doit avoir :
 - Le droit **Restore Tombstoned** sur l’objet domaine
 - Le droit **Generic Write** sur l’objet supprimé
 - Le droit **Create Child** sur l’OU utilisée pour la restauration  
