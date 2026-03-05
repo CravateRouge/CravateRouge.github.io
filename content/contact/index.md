@@ -13,7 +13,7 @@ sections:
         text: Send us an e-mail describing your requirements and contact information, we will get back to you as soon as possible.
         mail: contact@cravaterouge.com
         linkedin: https://www.linkedin.com/company/cravaterouge/
-        bluesky: https://bsky.app/profile/cravaterouge.bsky.social
+        mastodon: https://infosec.exchange/@CravateRouge
         github: https://github.com/CravateRouge
         address: CravateRouge Ltd, 23 Thomson Road, Wan Chai, Hong Kong SAR
 ---

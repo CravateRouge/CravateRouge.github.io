@@ -32,8 +32,8 @@ profiles:
     url: https://www.linkedin.com/in/bapt-crp/
   - icon: brands/github
     url: https://github.com/CravateRouge
-  - icon: brands/bluesky
-    url: https://bsky.app/profile/cravaterouge.bsky.social
+  - icon: brands/mastodon
+    url: https://infosec.exchange/@CravateRouge
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   # - icon: academicons/cv
   #   url: uploads/resume.pdf

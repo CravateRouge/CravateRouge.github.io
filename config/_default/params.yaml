@@ -25,6 +25,10 @@ marketing:
   analytics:
     google_analytics: 'G-64YDD5310R'
 
+features:
+  math:
+    enable: false
+
 # Site header
 header:
   navbar:
