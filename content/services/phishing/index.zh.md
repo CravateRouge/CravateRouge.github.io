@@ -6,7 +6,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: 钓鱼模拟
       text: 您知道91%的成功数据泄露始于鱼叉式网络钓鱼攻击吗？
@@ -25,11 +25,15 @@ sections:
         image:
           # 将您的背景图片添加到 `assets/media/`。
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     id: definition
     content:
       items:
@@ -67,7 +71,7 @@ sections:
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
   
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     parity: "odd"
     content:
       items:
@@ -118,8 +122,6 @@ sections:
         text: 订购您的模拟
         url: /zh/contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

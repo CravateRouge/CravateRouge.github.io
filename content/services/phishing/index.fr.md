@@ -6,7 +6,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: Simulation de Phishing
       text: Saviez-vous que 91% des fuites de données réussies ont commencé par une attaque de spear phishing ?
@@ -24,11 +24,15 @@ sections:
         color: "navy"
         image:
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     id: definition
     content:
       items:
@@ -64,7 +68,7 @@ sections:
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
   
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     parity: "odd"
     content:
       items:
@@ -115,8 +119,6 @@ sections:
         text: Commandez votre simulation
         url: /fr/contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

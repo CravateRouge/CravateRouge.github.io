@@ -7,7 +7,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: Give your teams the tools they need to work at their best
       text: With Azure & Microsoft 365, empower your employees to creatively, effectively and securely collaborate and work from anywhere
@@ -26,9 +26,13 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
   - block: features
     id: reasons
@@ -131,8 +135,6 @@ sections:
         text: Let's talk together about your needs!
         url: /contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

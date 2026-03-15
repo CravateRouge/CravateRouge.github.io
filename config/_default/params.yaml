@@ -3,57 +3,61 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-i_am_a_sponsor: true
-power_ups:
-  hide_published_with: true
-  
-# Appearance
-appearance:
-  mode: light
-  color: red
-
-# SEO
-marketing:
-  seo:
-    site_type: LocalBusiness
-    local_business_type: 'ProfessionalService'
-    org_name: ''
-    description: |
-      Keep it tight with your security. At CravateRouge Ltd we provide cybersecurity services tailored to your needs.
-      From protection to audit, we also provide trainings, forensic and custom security softwares.
-    twitter: 'rouge_cravate'
-  analytics:
-    google_analytics: 'G-64YDD5310R'
-
-features:
-  math:
-    enable: false
-
-# Site header
-header:
-  navbar:
+hugoblox:
+  schema: "2.0"
+  identity:
+    name: "CravateRouge Ltd"
+    type: organization
+    description: Keep it tight with your security. At CravateRouge Ltd we provide cybersecurity services tailored to your needs.
+    social:
+      twitter: "rouge_cravate" 
+  theme:
+    mode: system
+    pack: default
+    colors:
+      primary: red
+      secondary: ""
+      neutral: ""
+  typography:
+    font: sans
+    size: md
+  layout:
+    radius: md
+    spacing: comfortable
+    avatar_shape: circle
+  header:
     enable: true
-    block: "navbar"
-    align: "center"
-    fixed_to_top: true
-    logo:
-      # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
-    button:
+    style: navbar
+    sticky: true
+    align: center
+    search: true
+    show_logo: true
+    show_title: false
+    theme_toggle: true
+    language_switcher: false
+    cta:
       enable: true
       text: "Contact Us"
       url: "contact/"
-    show_search: true
-    show_theme_chooser: true
-
-# Site footer
-footer:
+  footer:
+    style: minimal
+    language_switcher: true
   copyright:
+    license:
+      type: custom                          # cc | custom
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
     notice: |
-      © {year} CravateRouge Ltd. All rights reserved.\
+      © {year} {name}. All rights reserved.\
       CravateRouge Limited is a private limited company registered in Hong Kong SAR under the incorporation number 76292843.
-
-# Localization
-locale:
-  date_format: '2 Jan, 2006'
-  time_format: '15:04'
+  content:
+    math:
+      enable: false
+  search:
+    enable: true
+  pro:
+    hide_attribution: false
+  analytics:
+    google:
+      measurement_id: "G-64YDD5310R"

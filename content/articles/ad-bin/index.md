@@ -1,18 +1,18 @@
 ---
-title: "Have You Looked in the Trash? Unearthing Privilege Escalations from the Active Directory Recycle Bin"
-summary: "How overlooked objects in AD's Recycle Bin can become a goldmine for attackers—and what defenders need to know"
+title: Have You Looked in the Trash? Unearthing Privilege Escalations from the
+  Active Directory Recycle Bin
+summary: How overlooked objects in AD's Recycle Bin can become a goldmine for
+  attackers—and what defenders need to know
 date: 2025-06-25
-
 authors:
   - admin
-
 tags:
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 
 _"Have You Looked in the Trash?"_
 
@@ -128,9 +128,8 @@ nTSecurityDescriptor.ACL.3.ObjectType: Self
 nTSecurityDescriptor.ACL.3.Flags: CONTAINER_INHERIT
 [...]
 ```
-{{% callout note %}}
-By default, only Domain Admins are able to list and restore deleted objects.
-{{% /callout %}}
+> [!NOTE]
+>By default, only Domain Admins are able to list and restore deleted objects.
 
 SharpHound does not retrieve deleted objects even when run as Domain Admin, despite documentation suggesting it could ([see BloodHound docs](https://bloodhound.specterops.io/collect-data/permissions#granting-access-to-the-deleted-objects-container-optional)).  
 So BloodHound CE **cannot** detect privilege escalation opportunities from deleted objects.
@@ -168,9 +167,8 @@ $ bloodyAD -u john -d bloody -p 'Password123!' --host 192.168.100.3 set restore 
 - **Scenario 3: ACL Exploitation**  
   A deleted group is still referenced in ACLs on critical resources. An attacker restores the group and adds themselves to it, gaining access.
 
-{{% callout note %}}
-There is a HTB machine called [TombWatcher](https://www.hackthebox.com/machines/tombwatcher) for those who want to practice.
-{{% /callout %}}
+> [!NOTE]
+>There is a HTB machine called [TombWatcher](https://www.hackthebox.com/machines/tombwatcher) for those who want to practice.
 
 ## Detection & Defense
 
@@ -213,9 +211,8 @@ To defend against these threats, security teams can:
   Get-ADObject -Filter {isDeleted -eq $True -and samaccountname -eq "recycletest"} -IncludeDeletedObjects | Remove-ADObject
   ````
 
-  {{% callout note %}}
-  This feature is only available if Recycle Bin is enabled.
-  {{% /callout %}}
+> [!NOTE]
+> This feature is only available if Recycle Bin is enabled.
 
 - **Limit restore permissions**  
   Only trusted admins should have the ability to restore objects.

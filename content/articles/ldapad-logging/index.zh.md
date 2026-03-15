@@ -1,18 +1,17 @@
 ---
-title: "像忍者一样执行 AD LDAP 查询"
-summary: "减少日志生成的策略，以及提高日志记录效率的方法"
+title: 像忍者一样执行 AD LDAP 查询
+summary: 减少日志生成的策略，以及提高日志记录效率的方法
 date: 2024-12-24
 lastmod: 2025-04-23
 authors:
   - admin
-
 tags:
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 
 不久前，一位蓝队成员联系了我，他很尴尬，因为他能够检测到 SharpHound 的 LDAP 查询，但在他的 SIEM 中找不到使用 [bloodyAD](https://github.com/CravateRouge/bloodyAD)（我开发的一个 AD 审计工具）进行的 LDAP 查询的任何痕迹。我感到困惑并想进一步调查，但后来忘记了，直到最近 😅。在为我的工具开发新功能时，我意识到我无法在域控制器 (DC) 日志中看到任何 LDAP 查询来帮助我调试。
 
@@ -52,9 +51,8 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Diagnostics\Field Engi
 
 正确的做法是仅创建 _昂贵的搜索结果阈值_ 注册表键并将其设置为 __1__。在这些设置下，即使是 [bloodyAD](https://github.com/CravateRouge/bloodyAD) 也无法绕过 LDAP 检测！
 
-{{% callout note %}}
-您还可以为每个对象设置审计策略，但我将在另一篇文章中讨论。
-{{% /callout %}}
+> [!NOTE]
+>您还可以为每个对象设置审计策略，但我将在另一篇文章中讨论。
 
 ## 结论
 正确记录 LDAP 查询以检测威胁比看起来更复杂。蓝队成员在设置时应小心。对于红队成员，这里有一些提示可以降低 LDAP 查询（尤其是像 [AS-REP roastable users](https://github.com/CravateRouge/bloodyAD/wiki/Enumeration#get-accounts-that-do-not-require-kerberos-pre-authentication-as-rep) 这样的标记查询）的检测概率：

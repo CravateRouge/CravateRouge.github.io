@@ -1,19 +1,19 @@
 ---
-title: "BitLocker activé. Êtes-vous vraiment protégé ?"
-summary: "Examen du niveau de sécurité actuel offert par BitLocker contre le vol de données"
+title: BitLocker activé. Êtes-vous vraiment protégé ?
+summary: Examen du niveau de sécurité actuel offert par BitLocker contre le vol
+  de données
 date: 2024-11-26
 authors:
   - admin
-
 tags:
   - BitLocker
   - TPM
   - Windows
   - Microsoft
-
 categories:
   - Windows
 ---
+
 
 C'est vendredi soir, et vous venez de terminer votre journée de travail. Vous décidez de vous détendre avec un verre au bar d'en bas avant de rentrer chez vous. Tout se passe bien et vous détournez les yeux de votre ordinateur portable pour profiter de votre soirée, mais lorsque vous la regardez à nouveau, elle a disparu. Malheureusement, il contenait des données sensibles. Cependant, il y a encore de l'espoir, car vous avez chiffré votre disque dur avec [BitLocker](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/data-protection/bitlocker/) ! Mais [BitLocker](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/data-protection/bitlocker/) vous protège-t-il vraiment ? Regardons cela de plus près.
 

@@ -1,0 +1,24 @@
+"schema": "hugoblox/author/v1"
+"slug": "admin"
+"name":
+  "display": "李白兔"
+  "given": "白兔"
+  "family": "李"
+"is_owner": true
+"status":
+  "icon": "☕️"
+"role": "首席执行官兼安全专家"
+"bio": "热衷于网络安全，专注于Microsoft 365/Active Directory技术，并在美国黑帽大会上发言。"
+"links":
+  - "icon": "at-symbol"
+    "url": "mailto:baptiste@cravaterouge.com"
+    "label": "E-mail Me"
+  - "icon": "brands/linkedin"
+    "url": "https://www.linkedin.com/in/bapt-crp/"
+  - "icon": "brands/github"
+    "url": "https://github.com/CravateRouge"
+  - "icon": "brands/mastodon"
+    "url": "https://infosec.exchange/@CravateRouge"
+  - "icon": "rss"
+    "url": "./articles/index.xml"
+    "label": "订阅RSS源以接收新文章"

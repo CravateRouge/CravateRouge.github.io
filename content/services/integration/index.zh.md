@@ -6,7 +6,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: 为您的团队提供最佳工作所需的工具
       text: 借助 Azure 和 Microsoft 365，让您的员工能够创造性地、高效地、安全地随时随地协作和工作。
@@ -24,9 +24,13 @@ sections:
         color: "navy"
         image:
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
   - block: features
     id: reasons
@@ -129,8 +133,6 @@ sections:
         text: 让我们讨论您的需求！
         url: /zh/contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

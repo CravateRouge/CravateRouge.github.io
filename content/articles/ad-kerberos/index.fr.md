@@ -2,14 +2,8 @@
 title: Jouer avec Kerberos
 summary: Maîtrisez le protocole Kerberos sur Active Directory en utilisant bloodyAD.
 date: 2024-03-05
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
 authors:
   - admin
-
 tags:
   - Authentication
   - bloodyAD
@@ -17,6 +11,7 @@ tags:
 categories:
   - Active Directory
 ---
+
 > ⚠️ Depuis le commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) l'échange d'informations sensibles sans LDAPS est supportée.
 
 La plupart du temps, j’utilise l'authentification NTML mais parfois, on doit se débrouiller avec un TGT ou ST kerberos et ça serait dommage de ne pas les utiliser pour essayer d'élever ses privilèges dans l'AD. Alors voyons comment faire ça avec [bloodyAD](https://github.com/CravateRouge/bloodyAD).

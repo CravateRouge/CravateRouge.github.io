@@ -1,18 +1,16 @@
 ---
-title: "你查过回收站了吗？从Active Directory回收站挖掘权限提升"
-summary: "AD回收站中被忽视的对象如何成为攻击者的金矿——防御者需要了解的内容"
+title: 你查过回收站了吗？从Active Directory回收站挖掘权限提升
+summary: AD回收站中被忽视的对象如何成为攻击者的金矿——防御者需要了解的内容
 date: 2025-06-25
-
 authors:
   - admin
-
 tags:
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 
 _"你查过回收站了吗？"_
 
@@ -128,9 +126,8 @@ nTSecurityDescriptor.ACL.3.ObjectType: Self
 nTSecurityDescriptor.ACL.3.Flags: CONTAINER_INHERIT
 [...]
 ```
-{{% callout note %}}
-默认情况下，只有域管理员可以列出和恢复已删除对象。
-{{% /callout %}}
+> [!NOTE]
+>默认情况下，只有域管理员可以列出和恢复已删除对象。
 
 SharpHound即使以域管理员身份运行，也不会收集已删除对象，尽管文档中提到可以（[见BloodHound文档](https://bloodhound.specterops.io/collect-data/permissions#granting-access-to-the-deleted-objects-container-optional)）。  
 因此BloodHound CE **无法**检测已删除对象带来的权限提升机会。
@@ -168,9 +165,8 @@ $ bloodyAD -u john -d bloody -p 'Password123!' --host 192.168.100.3 set restore 
 - **场景3：ACL利用**  
   已删除组仍被关键资源的ACL引用。攻击者恢复该组并将自己加入，从而获得访问权限。
 
-{{% callout note %}}
-有一台HTB靶机叫[TombWatcher](https://www.hackthebox.com/machines/tombwatcher)可供练习。
-{{% /callout %}}
+> [!NOTE]
+> 有一台HTB靶机叫[TombWatcher](https://www.hackthebox.com/machines/tombwatcher)可供练习。
 
 ## 检测与防御
 
@@ -213,9 +209,8 @@ $ bloodyAD -u john -d bloody -p 'Password123!' --host 192.168.100.3 set restore 
   Get-ADObject -Filter {isDeleted -eq $True -and samaccountname -eq "recycletest"} -IncludeDeletedObjects | Remove-ADObject
   ````
 
-  {{% callout note %}}
-  仅在启用回收站时可用。
-  {{% /callout %}}
+> [!NOTE]
+> 仅在启用回收站时可用。
 
 - **限制恢复权限**  
   仅可信管理员应有恢复对象的权限。

@@ -4,18 +4,17 @@ summary: 了解如何使用 bloodyAD 轻松利用 Certifried 漏洞。
 date: 2024-05-11
 authors:
   - soka
-  - admin
-
+  - me
 tags:
   - Authentication
   - CVE
   - Exploit
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 
 最近，微软修复了 Certifried (CVE-2022-26923) 漏洞，并发布了这篇[博客文章](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4)。以下是如何使用 [bloodyAD](https://github.com/CravateRouge/bloodyAD) 在不使用 PKINIT 的情况下利用此漏洞的示例。
 

@@ -6,7 +6,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: Nos Services de Test d'Intrusion
       text: Evaluez la sécurité de votre infrastructure
@@ -25,9 +25,13 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
   - block: features
     id: services
@@ -74,7 +78,7 @@ sections:
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
 
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     id: methodology
     design:
       css_class_primary: "bg-gray-100 dark:bg-gray-900"
@@ -104,8 +108,6 @@ sections:
         text: Demandez un devis
         url: /fr/contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

@@ -1,24 +1,21 @@
 ---
 title: Certificate authentication dug up
-summary: Leverage certificate-based authentication power on Active Directory environment.
+summary: Leverage certificate-based authentication power on Active Directory
+  environment.
 date: 2023-11-09
-aliases: [/ad/privesc/2022/05/09/bloodyad-and-certificate-authentication,/ad/privesc/2022/05/09/bloodyad-and-certificate-authentication.html]
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
+aliases:
+  - /ad/privesc/2022/05/09/bloodyad-and-certificate-authentication
+  - /ad/privesc/2022/05/09/bloodyad-and-certificate-authentication.html
 authors:
   - admin
-
 tags:
   - Authentication
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 A few days ago I read a [great article](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html) from Yannick Méheut of Almond about certificate authentication in Active Directory environment. It is especially useful when PKINIT is not supported and thus you can't use your certificate to request a TGT.
 This is why I wanted to extend the capabilities of [bloodyAD](https://github.com/CravateRouge/bloodyAD) by allowing certificate authentication.
 Here is an example on how to use it (the first part show how to get a certificate if you just want to try the functionality):

@@ -6,7 +6,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: Donnez à vos équipes les outils dont elles ont besoin
       text: Avec Azure et Microsoft 365, permettez à vos employés de collaborer et de travailler de manière créative, efficace et sécurisée, où qu'ils soient.
@@ -24,9 +24,13 @@ sections:
         color: "navy"
         image:
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
   - block: features
     id: reasons
@@ -129,8 +133,6 @@ sections:
         text: Discutons ensemble de vos besoins!
         url: /fr/contact
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

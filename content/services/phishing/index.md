@@ -6,7 +6,7 @@ design:
   spacing: "0rem"
 
 sections:
-  - block: hero-rel
+  - block: hero
     content:
       title: Phishing Simulation
       text: Did you know that 91% of successful data breaches started with a spear phishing attack?
@@ -25,11 +25,15 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
 
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     id: definition
     content:
       items:
@@ -65,7 +69,7 @@ sections:
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
   
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     parity: "odd"
     content:
       items:
@@ -115,8 +119,6 @@ sections:
         text: Order your simulation
         url: /contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

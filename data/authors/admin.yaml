@@ -1,0 +1,24 @@
+"schema": "hugoblox/author/v1"
+"slug": "admin"
+"name":
+  "display": "Baptiste Crépin"
+  "given": "Baptiste"
+  "family": "Crépin"
+"is_owner": true
+"status":
+  "icon": "☕️"
+"role": "CEO & Security Expert"
+"bio": "Security enthusiast, specialized in Microsoft 365/Active Directory technologies and speaker at the US Black Hat."
+"links":
+  - "icon": "at-symbol"
+    "url": "mailto:baptiste@cravaterouge.com"
+    "label": "E-mail Me"
+  - "icon": "brands/linkedin"
+    "url": "https://www.linkedin.com/in/bapt-crp/"
+  - "icon": "brands/github"
+    "url": "https://github.com/CravateRouge"
+  - "icon": "brands/mastodon"
+    "url": "https://infosec.exchange/@CravateRouge"
+  - "icon": "rss"
+    "url": "./articles/index.xml"
+    "label": "Subscribe to new articles via RSS feed"

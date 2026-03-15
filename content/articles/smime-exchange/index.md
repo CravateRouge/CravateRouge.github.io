@@ -1,18 +1,17 @@
 ---
-title: "Implementing S/MIME with Exchange Online and OWA"
-summary: "Implementing S/MIME with Exchange Online and OWA for secure email communications"
+title: Implementing S/MIME with Exchange Online and OWA
+summary: Implementing S/MIME with Exchange Online and OWA for secure email
+  communications
 date: 2024-11-14
-
 authors:
   - admin
-
 tags:
   - Microsoft
   - Azure
-
 categories:
   - M365
 ---
+
 
 Aaah email, invented late 20th and still the corner stone of communication today. However security needs are increasing and we had to find new ways to ensure our email communications were secured. Why? Because to exchange emails, email servers use SMTP, an unencrypted protocol, so we can forget the confidentiality and authenticity guarantee. It's true that we can wrap it into TLS using SMTPS or STARTTLS but if you're using **Exchange Online** if the recipient mail server doesn't support TLS then the communication will be [simple unencrypted SMTP](https://learn.microsoft.com/en-us/purview/exchange-online-uses-tls-to-secure-email-connections#tls-basics-for-microsoft-365-and-exchange-online). 
 
@@ -105,7 +104,6 @@ Set-MailContact -Identity CravateRouge_SMIME -UserCertificate $certArray
 - And you can also encrypt/verify emails of contacts you added to Exchange Online
 ![encrypt selected](smime/encrypt_whitelisted.png)
 
-{{% callout note %}}
-Even if everything is working well, you may still have an error message when sending encrypted messages to external clients. Don't worry, it's just a bug from Microsoft as this feature is not well supported yet.
-![encryption error](smime/error_encrypted.png)
-{{% /callout %}}
+> [!NOTE]
+> Even if everything is working well, you may still have an error message when sending encrypted messages to external clients. Don't worry, it's just a bug from Microsoft as this feature is not well supported yet.
+> ![encryption error](smime/error_encrypted.png)

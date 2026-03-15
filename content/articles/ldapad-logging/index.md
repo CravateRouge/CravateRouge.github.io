@@ -1,19 +1,18 @@
 ---
-title: "Performing AD LDAP Queries Like a Ninja"
-summary: "Strategies to minimize logging generation, and methods to enhance logging efficiency"
+title: Performing AD LDAP Queries Like a Ninja
+summary: Strategies to minimize logging generation, and methods to enhance
+  logging efficiency
 date: 2024-12-24
 lastmod: 2025-04-23
-
 authors:
   - admin
-
 tags:
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 A while ago, a blueteam guy reached out to me, embarrassed because he could detect SharpHound LDAP queries but found no traces of LDAP queries made with [bloodyAD](https://github.com/CravateRouge/bloodyAD) (an AD audit tool I develop) in his SIEM. I was puzzled and wanted to investigate further but then I forgot about it until recently 😅. While developing new functionalities for my tool, I realized I couldn't see any LDAP queries in the Domain Controller (DC) logs to aid me debugging. 
 
 ## LDAP logging in Active Directory
@@ -52,9 +51,8 @@ The intuitive way would be to set everything to __0__ to be able to see every LD
 
 The right thing to do to enable maximum logging is to only create _Expensive search results threshold_ registry key and set it to __1__. With these settings, even [bloodyAD](https://github.com/CravateRouge/bloodyAD) cannot bypass LDAP detection!
 
-{{% callout note %}}
-You can also set an audit policy per object but I'll talk about it in another article.
-{{% /callout %}}
+> [!NOTE]
+>You can also set an audit policy per object but I'll talk about it in another article.
 
 ## Conclusion
 Logging correctly LDAP queries for threats detection is trickier than it seems. Blueteam guys should be careful when setting it up. For redteam guys, here are some tips to lower the chance of detection for your LDAP queries, especially for flagged ones like the one for [AS-REP roastable users](https://github.com/CravateRouge/bloodyAD/wiki/Enumeration#get-accounts-that-do-not-require-kerberos-pre-authentication-as-rep):

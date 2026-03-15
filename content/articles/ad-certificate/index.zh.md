@@ -2,18 +2,16 @@
 title: 挖掘证书认证
 summary: 在 Active Directory 环境中利用基于证书的认证功能。
 date: 2023-11-09
-
 authors:
   - admin
-
 tags:
   - Authentication
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 几天前，我阅读了来自 Almond 的 Yannick Méheut 的一篇[精彩文章](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html)，内容是关于在 Active Directory 环境中使用证书认证的。这在 PKINIT 不受支持时尤其有用，因为在这种情况下，您无法使用证书请求 TGT。
 这就是为什么我想扩展 [bloodyAD](https://github.com/CravateRouge/bloodyAD) 的功能，以支持证书认证。
 以下是如何使用它的示例（第一部分展示了如何获取证书，如果您只是想尝试该功能）：

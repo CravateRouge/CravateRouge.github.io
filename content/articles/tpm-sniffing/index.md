@@ -1,24 +1,18 @@
 ---
-title: "BitLocker enabled. Are you really protected?"
-summary: "Review of the current security level brought by BitLocker against data theft"
+title: BitLocker enabled. Are you really protected?
+summary: Review of the current security level brought by BitLocker against data theft
 date: 2024-11-26
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
 authors:
   - admin
-
 tags:
   - BitLocker
   - TPM
   - Windows
   - Microsoft
-
 categories:
   - Windows
 ---
+
 
 It's Friday evening, and you've just wrapped up work. You decide to unwind with a drink at the bar downstairs before heading home. Everything is going well and you take your eyes off your briefcase enjoying your evening, byt when you look at it again, it's gone. Unfortunately, it contained sensitive data. However there's still hope because you encrypted your hard drive with [BitLocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/)! But is [BitLocker](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/) truly protecting you? Let's take a closer look.
 

@@ -30,16 +30,33 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
   - block: resume-biography-3
     id: about
+    design:
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      name:
+        size: sm
     content:
       username: admin
       headings:
         about: Qui sommes nous?
+      text: |
+        Je m'appelle Baptiste Crépin, directeur et expert sécurité chez CravateRouge Ltd.
 
+        Mon aventure en cybersécurité a débutée avec un Master de l'Université Paris-Saclay. Par la suite, j'ai acquis de l'expérience en tant qu'opérateur red team chez AXA, en me spécialisant sur les environments Microsoft. Ce poste m'a permis de simuler des attaques réelles pour identifier et corriger les vulnérabilités.
+
+        Je partage aussi mes recherches et développe des outils afin d'aider les experts en cybersécurité à vous fournir la meilleure protection. Par ailleurs, j'ai eu la chance de présenter l'un de mes outils lors de la [Black Hat Vegas](https://www.blackhat.com/us-22/arsenal/schedule/#bloodyad-26883), l'un des plus grands événements de sécurité informatique au monde.
+
+        C'est pourquoi j'ai décidé de fonder CravateRouge Ltd, afin de mettre mon expertise directement à votre service. Avec des offres de cybersécurité personnalisés et complètes, spécialisées dans les produits Microsoft, nous veillons à ce que votre infrastrucure bénéficie de la meilleure protection. Faites confiance à notre équipe pour sécuriser votre avenir.
   - block: stats
     content:
       items:
@@ -51,7 +68,9 @@ sections:
             D'expérience sur le terrain
         - statistic: "1500+"
           description: |
-            Experts sécurité [apprécient notre travail](https://github.com/CravateRouge/bloodyAD)
+            Experts sécurité <a href='https://github.com/CravateRouge/bloodyAD'>apprécient notre travail</a>
+    spacing:
+      padding: ["1rem", 0, "1rem", 0]
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
 
@@ -78,31 +97,33 @@ sections:
         - name: Audit
           icon: bolt
           description: |
-            [Testez la résistance de votre infrastructure face aux attaques!](#auditsum)
+            <a href='#auditsum'>Testez la résistance de votre infrastructure face aux attaques!</a>
         - name: Protection
           icon: lock-closed
           description: |
-            [Renforcez vos systèmes en implémentant des mesures adaptées](#protectsum)
+            <a href='#protectsum'>Renforcez vos systèmes en implémentant des mesures adaptées</a>
         - name: Formation
           icon: academic-cap
           description: |
-            [Devenez un As de la cybersécurité!](#trainingsum)
+            <a href='#trainingsum'>Devenez un As de la cybersécurité!</a>
         - name: Simulation de Phishing
           icon: envelope
           description: |
-            [Sensiblisez vos employés à identifier les menaces cyber grâce à nos simulations de phishing](#phishingsum)
+            <a href='#phishingsum'>Sensiblisez vos employés à identifier les menaces cyber grâce à nos simulations de phishing</a>
         - name: Intégration Microsoft 365
           icon: cpu-chip
           description: |
-            [Intégrez M365 et Azure Cloud à votre entreprise pour améliorer votre productivité et votre sécurité](#m365sum)
+            <a href='#m365sum'>Intégrez M365 et Azure Cloud à votre entreprise pour améliorer votre productivité et votre sécurité</a>
         - name: Services sur mesure
           icon: beaker
           description: |
-            [Si vous avez des besoins spécifiques faites-le nous savoir](#tailoredsum)
+            <a href='#tailoredsum'>Si vous avez des besoins spécifiques faites-le nous savoir</a>
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
+      spacing:
+        padding: [0, 0, 0, 0]
 
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     design:
       css_class_primary: "bg-gray-100 dark:bg-gray-900"
     content:
@@ -183,8 +204,6 @@ sections:
         text: Contactez-nous
         url: contact/
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

@@ -2,26 +2,22 @@
 title: Exploiting Certifried (CVE-2022-26923)
 summary: Discover how to exploit the certifried vulnerability easily with bloodyAD.
 date: 2024-05-11
-aliases: [/ad/privesc/2022/05/11/bloodyad-and-CVE-2022-26923,/ad/privesc/2022/05/11/bloodyad-and-CVE-2022-26923.html]
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
+aliases:
+  - /ad/privesc/2022/05/11/bloodyad-and-CVE-2022-26923
+  - /ad/privesc/2022/05/11/bloodyad-and-CVE-2022-26923.html
 authors:
   - soka
-  - admin
-
+  - me
 tags:
   - Authentication
   - CVE
   - Exploit
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 A new ADCS privesc was released: Certifried (CVE-2022-26923) with this [blogpost](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4) after Microsoft patched it.
 Here is an example on how to exploit this vulnerability with [bloodyAD](https://github.com/CravateRouge/bloodyAD) and PKINIT not supported from Linux.
 

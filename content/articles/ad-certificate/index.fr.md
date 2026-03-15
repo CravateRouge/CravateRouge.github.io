@@ -1,24 +1,18 @@
 ---
 title: L'authentication par certificat dépoussiérée
-summary: Exploiter la puissance de l'authentification par certificat dans un environnement Active Directory
+summary: Exploiter la puissance de l'authentification par certificat dans un
+  environnement Active Directory
 date: 2023-11-09
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
 authors:
   - admin
-
 tags:
   - Authentication
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
-
 ---
+
 
 Il y a quelques jours, j'ai lu un [excellent article](https://offsec.almond.consulting/authenticating-with-certificates-when-pkinit-is-not-supported.html) de Yannick Méheut d'Almond sur l'authentification par certificat dans un environnement Active Directory. C'est particulièrement utile lorsque PKINIT n'est pas supporté et que vous ne pouvez donc pas utiliser votre certificat pour demander un TGT.
 C'est pourquoi j'ai voulu étendre les capacités de [bloodyAD](https://github.com/CravateRouge/bloodyAD) en permettant l'authentification par certificat.

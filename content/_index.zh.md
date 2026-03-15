@@ -32,16 +32,33 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           filename: constellation.svg
-          size: "auto;background-repeat:repeat"
+          position: repeat
+          size: auto
           filters:
             brightness: 0.5
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
   - block: resume-biography-3
     id: about
+    design:
+      spacing: 
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      name:
+        size: sm
     content:
       username: admin
       headings:
         about: 我们是谁？
+      text: |
+        我是李白兔，卡瓦特网络安全公司的首席执行官和安全专家。
 
+        我在[巴黎-萨克雷大学](https://www.shanghairanking.com/institution/paris-saclay-university)获得硕士学位后，开始了我的网络安全之旅。随后，我在[工银安盛人寿](https://www.icbc-axa.com/)担任红队操作员，专注于微软环境。这一角色让我有机会模拟真实世界的攻击，以识别和减轻漏洞。
+
+        此外，我分享我的研究并开发先进的工具，帮助安全专家为您提供最前沿的保护。特别是，我有幸在世界上最大的计算机安全事件之一[拉斯维加斯黑帽大会](https://www.blackhat.com/us-22/arsenal/schedule/#bloodyad-26883)上展示了我的一款工具。
+
+        这就是为什么我决定创办卡瓦特网络安全公司，将我的专业技术直接带给您。通过个性化、全面的网络安全服务，专注于微软产品，我们确保您的数字资产由业内最优秀的人才保护。相信我们的专业技术，保障您的未来无后顾之忧！
   - block: stats
     content:
       items:
@@ -53,7 +70,9 @@ sections:
             实地经验
         - statistic: "1500+"
           description: |
-            安全专家认可[我们的工作](https://github.com/CravateRouge/bloodyAD)
+            安全专家认可<a href='https://github.com/CravateRouge/bloodyAD'>我们的工作</a>
+    spacing:
+      padding: ["1rem", 0, "1rem", 0]
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -81,31 +100,33 @@ sections:
         - name: 审计
           icon: bolt
           description: |
-            [利用渗透测试评估您的安全体系验证其防范攻击者的能力](#auditsum)
+            <a href='#auditsum'>利用渗透测试评估您的安全体系验证其防范攻击者的能力</a>
         - name: 保护
           icon: lock-closed
           description: |
-            [通过添加适应基础设施的措施 强化您的系统](#protectsum)
+            <a href='#protectsum'>通过添加适应基础设施的措施 强化您的系统</a>
         - name: 培养
           icon: academic-cap
           description: |
-            [网络安全对你来说将不再有任何秘密](#trainingsum)
+            <a href='#trainingsum'>网络安全对你来说将不再有任何秘密</a>
         - name: 网络钓鱼模拟
           icon: envelope
           description: |
-            [通过实施强大的网络钓鱼模拟训练您的员工识别网络威胁](#phishingsum)
+            <a href='#phishingsum'>通过实施强大的网络钓鱼模拟训练您的员工识别网络威胁</a>
         - name: Microsoft 365 & Azure 集成
           icon: cpu-chip
           description: |
-            [将 M365 和 Azure 云集成到您的业务中 以提高生产力和安全性](#m365sum)
+            <a href='#m365sum'>将 M365 和 Azure 云集成到您的业务中 以提高生产力和安全性</a>
         - name: 定制服务
           icon: beaker
           description: |
-            [如果您有特定需求 请告知我们](#tailoredsum)
+            <a href='#tailoredsum'>如果您有特定需求 请告知我们</a>
       design:
-      css_class: "bg-gray-100 dark:bg-gray-900"
+        css_class: "bg-gray-100 dark:bg-gray-900"
+        spacing:
+        padding: [0, 0, 0, 0]
 
-  - block: cta-image-paragraph-custom
+  - block: cta-image-paragraph
     design:
       css_class_primary: "bg-gray-100 dark:bg-gray-900"
     content:
@@ -186,8 +207,6 @@ sections:
         text: "联络我们"
         url: "contact/"
     design:
-      card:
-        css_class: "bg-primary-700"
       spacing:
         padding: ["1rem", 0, 0, 0]
 ---

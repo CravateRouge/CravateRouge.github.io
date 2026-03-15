@@ -1,18 +1,17 @@
 ---
-title: "Implémenter S/MIME avec Exchange Online et OWA"
-summary: "Implémenter S/MIME avec Exchange Online et OWA pour des communications email sécurisées"
+title: Implémenter S/MIME avec Exchange Online et OWA
+summary: Implémenter S/MIME avec Exchange Online et OWA pour des communications
+  email sécurisées
 date: 2024-11-14
-
 authors:
   - admin
-
 tags:
   - Microsoft
   - Azure
-
 categories:
   - M365
 ---
+
 
 Aaah l'email, inventé à la fin du 20ème siècle et toujours la pierre angulaire de la communication d'aujourd'hui. Cependant, les besoins en sécurité augmentent et nous avons dû trouver de nouvelles façons de garantir la sécurité de nos communications email. Pourquoi ? Parce que pour échanger des emails, les serveurs email utilisent SMTP, un protocole non chiffré, donc on peut oublier la garantie de confidentialité et d'authenticité. Il est vrai que nous pouvons l'encapsuler dans TLS en utilisant SMTPS ou STARTTLS mais si vous utilisez **Exchange Online** et que le serveur de messagerie du destinataire ne prend pas en charge TLS, alors la communication sera [simplement en SMTP non chiffré](https://learn.microsoft.com/en-us/purview/exchange-online-uses-tls-to-secure-email-connections#tls-basics-for-microsoft-365-and-exchange-online).
 
@@ -105,7 +104,6 @@ Set-MailContact -Identity CravateRouge_SMIME -UserCertificate $certArray
 - Et vous pouvez également chiffrer/vérifier les emails des contacts que vous avez ajoutés à Exchange Online
 ![encrypt selected](smime/encrypt_whitelisted.png)
 
-{{% callout note %}}
-Même si tout fonctionne bien, vous pouvez toujours avoir un message d'erreur lors de l'envoi de messages chiffrés à des clients externes. Ne vous inquiétez pas, c'est juste un bug de Microsoft car cette fonctionnalité n'est pas encore bien prise en charge.
+> [!NOTE]
+> Même si tout fonctionne bien, vous pouvez toujours avoir un message d'erreur lors de l'envoi de messages chiffrés à des clients externes. Ne vous inquiétez pas, c'est juste un bug de Microsoft car cette fonctionnalité n'est pas encore bien prise en charge.
 ![encryption error](smime/error_encrypted.png)
-{{% /callout %}}

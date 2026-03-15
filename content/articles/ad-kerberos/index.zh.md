@@ -2,18 +2,16 @@
 title: 玩转 Kerberos
 summary: 使用 bloodyAD 完全掌控 Active Directory 上的 Kerberos 协议。
 date: 2024-03-05
-
 authors:
   - admin
-
 tags:
   - Authentication
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 > ⚠️ 自从提交 [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) 起，支持在没有 LDAPS 的情况下交换敏感信息。
 
 大多数情况下，我使用 NTLM 认证，但在某些情况下，我们只有 Kerberos 的 TGT 或 ST，如果不利用它来尝试提升我们在 AD 中的权限，那就太可惜了。那么让我们看看如何使用 [bloodyAD](https://github.com/CravateRouge/bloodyAD) 来实现这一点。

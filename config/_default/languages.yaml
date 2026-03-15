@@ -9,11 +9,11 @@ en:
   menus:
     main:
       - name: Home
-        url: "#top"
+        url: "/#top"
         weight: 10
       - name: Services
         weight: 30
-        url: "#services"
+        url: "/#services"
         hasChildren: true
       - parent: Services
         name: Security Audit
@@ -31,7 +31,7 @@ en:
         url: /articles
         weight: 40
       - name: About
-        url: "#about"
+        url: "/#about"
         weight: 50
 
 fr:
@@ -40,10 +40,10 @@ fr:
   menus:
     main:
       - name: Accueil
-        url: "#top"
+        url: "/#top"
         weight: 10
       - name: Services
-        url: "#services"
+        url: "/#services"
         weight: 30
         hasChildren: true
       - parent: Services
@@ -62,20 +62,17 @@ fr:
         url: /articles
         weight: 40
       - name: À propos
-        url: "#about"
+        url: "/#about"
         weight: 50
   params:
-    # SEO
-    marketing:
-      seo:
+    hugoblox:
+      identity:
         description: |
           Renouez avec la sécurité.
           Nous fournissons des services de cybersécurité correspondants à vos besoins.
           De la protection à l'audit en passant par des formations personnalisées, nous fournissons aussi des analyses forensiques et des logiciels de sécurité personnalisés.
-    # Site header
-    header:
-      navbar:
-        button:
+      header:
+        cta:
           text: "Contactez-nous"
 
 zh:
@@ -85,10 +82,10 @@ zh:
   menus:
     main:
       - name: 家
-        url: "#top"
+        url: "/#top"
         weight: 10
       - name: 服务
-        url: "#services"
+        url: "/#services"
         weight: 30
         hasChildren: true
       - parent: 服务
@@ -107,22 +104,20 @@ zh:
         url: /articles
         weight: 40
       - name: 关于
-        url: "#about"
+        url: "/#about"
         weight: 50
   params:
-    # SEO
-    marketing:
-      seo:
+    hugoblox:
+      identity:
+        logo_svg: "media/logo-zh.svg"
         description: |
           严格守护你的网络安全。在卡瓦特网络安全公司，我们会提供根据您的需求量身定制的网络安全服务。
           从保护到审计，我们还提供培训、取证和定制安全软件。
-      verification:
-        baidu: 'codeva-84l1iAxRFf'
-    # Site header
-    header:
-      navbar:
-        logo:
-          # Logo filename in `assets/media/` folder
-          filename: "logo-zh.svg"
-        button:
+      header:
+        cta:
+          enable: true
           text: "联络我们"
+          url: "contact/"
+      analytics:
+        baidu:
+          site_id: 'codeva-84l1iAxRFf'

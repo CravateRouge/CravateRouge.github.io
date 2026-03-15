@@ -1,19 +1,18 @@
 ---
-title: "启用了 BitLocker。你真的受到保护了吗？"
-summary: "评估 BitLocker 在防止数据盗窃方面的当前安全水平"
+title: 启用了 BitLocker。你真的受到保护了吗？
+summary: 评估 BitLocker 在防止数据盗窃方面的当前安全水平
 date: 2024-11-26
 authors:
   - admin
-
 tags:
   - BitLocker
   - TPM
   - Windows
   - Microsoft
-
 categories:
   - Windows
 ---
+
 
 周五晚上，你刚刚结束了一天的工作。你决定在楼下的酒吧喝一杯放松一下，然后再回家。一切都很顺利，你放松地享受着夜晚，但当你再次看向公文包时，它已经不见了。不幸的是，它里面装有敏感数据。然而还有希望，因为你用 [BitLocker](https://learn.microsoft.com/zh-cn/windows/security/operating-system-security/data-protection/bitlocker/) 加密了硬盘！但 [BitLocker](https://learn.microsoft.com/zh-cn/windows/security/operating-system-security/data-protection/bitlocker/) 真能保护你吗？让我们仔细看看。
 

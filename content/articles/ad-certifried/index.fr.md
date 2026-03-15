@@ -1,26 +1,21 @@
 ---
 title: Exploitation de Certifried (CVE-2022-26923)
-summary: Découvrez comment exploiter la vulnérabilité Certifried facilement avec bloodyAD.
+summary: Découvrez comment exploiter la vulnérabilité Certifried facilement avec
+  bloodyAD.
 date: 2024-05-11
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
 authors:
   - soka
-  - admin
-
+  - me
 tags:
   - Authentication
   - CVE
   - Exploit
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 
 Une nouvelle élévation de privilège est sortie: Certifried (CVE-2022-26923) avec ce [billet de blog](https://research.ifcr.dk/certifried-active-directory-domain-privilege-escalation-cve-2022-26923-9e098fe298f4) après que Microsoft l'ait patché.
 Voici un exemple de comment exploiter cette vulnérabilité avec [bloodyAD](https://github.com/CravateRouge/bloodyAD) sans utiliser PKINIT.

@@ -2,23 +2,19 @@
 title: Playing with Kerberos
 summary: Take full control of the Kerberos protocol on Active Directory using bloodyAD.
 date: 2024-03-05
-aliases: [/ad/privesc/2022/05/05/bloodyad-and-kerberos,/ad/privesc/2022/05/05/bloodyad-and-kerberos.html]
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-
+aliases:
+  - /ad/privesc/2022/05/05/bloodyad-and-kerberos
+  - /ad/privesc/2022/05/05/bloodyad-and-kerberos.html
 authors:
   - admin
-
 tags:
   - Authentication
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 > ⚠️ Since commit [54babd7](https://github.com/CravateRouge/bloodyAD/commit/54babd733aad477f3099b8e9db50b6436918d858) exchange of sensitive information without LDAPS is supported.
 
 Most of the time I use NTLM authentication, but in some situations, we only have a kerberos TGT or ST and it would be a shame to not use it to attempt to elevate our privileges in the AD. So let's see how we can do this with [bloodyAD](https://github.com/CravateRouge/bloodyAD).

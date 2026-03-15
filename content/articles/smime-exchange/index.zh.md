@@ -1,18 +1,16 @@
 ---
-title: "在Exchange Online和OWA中实现S/MIME"
-summary: "在Exchange Online和OWA中实现S/MIME以确保电子邮件通信的安全"
+title: 在Exchange Online和OWA中实现S/MIME
+summary: 在Exchange Online和OWA中实现S/MIME以确保电子邮件通信的安全
 date: 2024-11-14
-
 authors:
   - admin
-
 tags:
   - Microsoft
   - Azure
-
 categories:
   - M365
 ---
+
 
 啊，电子邮件，发明于20世纪末，至今仍是沟通的基石。然而，随着安全需求的增加，我们必须找到新的方法来确保电子邮件通信的安全。为什么？因为电子邮件服务器使用SMTP协议来交换邮件，这是一个未加密的协议，因此我们无法保证机密性和真实性。虽然我们可以通过SMTPS或STARTTLS将其包装在TLS中，但如果您使用的是**Exchange Online**，而收件方的邮件服务器不支持TLS，那么通信将是[简单的未加密SMTP](https://learn.microsoft.com/en-us/purview/exchange-online-uses-tls-to-secure-email-connections#tls-basics-for-microsoft-365-and-exchange-online)。
 
@@ -103,7 +101,6 @@ Set-MailContact -Identity CravateRouge_SMIME -UserCertificate $certArray
 - 您还可以加密/验证您添加到Exchange Online的联系人的邮件
 ![encrypt selected](smime/encrypt_whitelisted.png)
 
-{{% callout note %}}
-即使一切正常，您在向外部客户端发送加密邮件时可能仍会收到错误消息。别担心，这只是微软的一个bug，因为此功能尚未完全支持。
+> [!NOTE]
+> 即使一切正常，您在向外部客户端发送加密邮件时可能仍会收到错误消息。别担心，这只是微软的一个bug，因为此功能尚未完全支持。
 ![encryption error](smime/error_encrypted.png)
-{{% /callout %}}

@@ -1,18 +1,18 @@
 ---
-title: "Effectuer des requêtes LDAP AD comme un ninja"
-summary: "Stratégies pour minimiser la génération de journaux et méthodes pour optimiser la journalisation"
+title: Effectuer des requêtes LDAP AD comme un ninja
+summary: Stratégies pour minimiser la génération de journaux et méthodes pour
+  optimiser la journalisation
 date: 2024-12-24
 lastmod: 2025-04-23
 authors:
   - admin
-
 tags:
   - bloodyAD
   - Microsoft
-
 categories:
   - Active Directory
 ---
+
 
 Il y a quelque temps, un gars de la blueteam m'a contacté, embêté car il pouvait détecter les requêtes LDAP de SharpHound mais ne trouvait aucune trace des requêtes LDAP effectuées avec [bloodyAD](https://github.com/CravateRouge/bloodyAD) (un outil d'audit AD que je développe) dans son SIEM. J'étais perplexe et voulais enquêter davantage, mais j'ai oublié jusqu'à récemment 😅. En développant de nouvelles fonctionnalités pour mon outil, j'ai réalisé que je ne voyais aucune requête LDAP dans les journaux du contrôleur de domaine (DC) pour m'aider à déboguer.
 
@@ -52,9 +52,8 @@ La méthode intuitive serait de tout mettre à __0__ pour pouvoir voir chaque re
 
 La bonne chose à faire pour activer une journalisation maximale est de ne créer que la clé de registre _Expensive search results threshold_ et de la définir sur __1__. Avec ces paramètres, même [bloodyAD](https://github.com/CravateRouge/bloodyAD) ne peut pas contourner la détection LDAP !
 
-{{% callout note %}}
-On peut aussi créer une policy d'audit par objet mais j'en parlerai prochainement dans un nouvel article.
-{{% /callout %}}
+> [!NOTE]
+>On peut aussi créer une policy d'audit par objet mais j'en parlerai prochainement dans un nouvel article.
 
 ## Conclusion
 Configurer correctement les journaux LDAP pour détecter les menaces est plus complexe qu'il n'y paraît. Les membres de la blueteam doivent être prudents lors de la configuration. Pour les membres de la redteam, voici quelques conseils pour réduire les chances de détection de vos requêtes LDAP, en particulier pour celles signalées comme la recherche d'[utilisateurs AS-REP roastables](https://github.com/CravateRouge/bloodyAD/wiki/Enumeration#get-accounts-that-do-not-require-kerberos-pre-authentication-as-rep) :
