@@ -1,6 +1,6 @@
 ---
-title: "Won't Fix: Kernel DoS in clfs.sys via NULL FastMutex Dereference"
-summary: Unprivileged kernel DoS via NULL pointer dereference in clfs.sys affecting Windows 11/Server 2025, marked "Won't Fix" by Microsoft.
+title: "Won't Fix: Kernel DoS via NULL FastMutex Dereference"
+summary: Unprivileged kernel DoS via NULL pointer dereference of FastMutex affecting Windows 11/Server 2025, marked "Won't Fix" by Microsoft.
 date: 2026-03-16
 authors:
   - admin
