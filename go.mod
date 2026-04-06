@@ -2,6 +2,6 @@ module github.com/HugoBlox/theme-landing-page
 
 go 1.19
 
-require github.com/HugoBlox/kit/modules/blox v0.11.1-0.20260313154635-e02d32190aa4
+require github.com/HugoBlox/kit/modules/blox v0.12.0
 
-require github.com/HugoBlox/kit/modules/integrations/netlify v1.2.2-0.20260313154635-e02d32190aa4 // indirect
+require github.com/HugoBlox/kit/modules/integrations/netlify v1.3.0 // indirect
