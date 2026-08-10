@@ -62,10 +62,10 @@ jobs:
         sudo chmod +x /usr/local/bin/yq
         
         # Read hugo_version from hugoblox.yaml
-        VERSION=$(yq '.hugo_version // ""' hugoblox.yaml 2>/dev/null | grep -v '^null$' || true)
+        VERSION=$(yq -r '.build.hugo_version // .hugo_version // ""' hugoblox.yaml 2>/dev/null | grep -v '^null$' || true)
         
         # Fallback to a known stable version if not specified
-        DEFAULT_VERSION="0.154.5"
+        DEFAULT_VERSION="0.158.0"
         VERSION=${VERSION:-$DEFAULT_VERSION}
         
         # Validate version format (basic check)

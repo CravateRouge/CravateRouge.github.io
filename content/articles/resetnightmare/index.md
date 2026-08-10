@@ -79,12 +79,44 @@ Password changed successfully!
 
 That's it you're now domain admin of BLOODY.CORP!
 
+## ResetNightmare Patch Analysis
+
+A small BinDiff between the two `kdcsrv.dll` builds that were available before and after the April 2026 patch shows that the change lands inside the `KdcChangePassword` request path, not in the object-store access path. The emphasis of the patch is to add a new decision branch before the password-reset operation is allowed to continue and, in effect, to enforce an additional identity / PAC-SID check for the ticket that is being used to drive the reset.
+
+Below the pseudo-code reconsitution:
+
+```c
+if (request_is_a_password_change_request) {
+    // The post-patch build introduces a new validation gate.
+    feature_enabled = EvaluateCurrentState(&g_Feature_Descriptor);
+    if (feature_enabled != 0) {
+        if (name_or_identifier_check_is_not_strictly_resolved) {
+            // A second validation function is called here.
+            // The goal is to reject a request that cannot be tied to
+            // a valid PAC/SID context.
+            if (KdcValidatePacUserSid(ticket_info, pac_info) == FALSE) {
+                return STATUS_ACCESS_DENIED;
+            }
+        }
+    }
+
+    // If the new gate passes, the rest of the KDC change-password flow can run.
+    continue_KdcChangePassword();
+}
+```
+
+From the perspective of the patch, the most important indicator is this new element:
+
+- `KdcValidatePacUserSid()` is new in the change-password execution branch and is used to reject a password change when the caller's identity does not pass the PAC/SID validation expected by the patched KDC logic.
+
+
 ## KerberLoss (CVE-2026-25177)
 
 KerberLoss is the companion CVE that appears in the Semperis research publication. The issue is associated with the risk of malicious or confusing object names being accepted by AD and subsequently used in Kerberos service logic. 3 scenarios have been identified by the researcher:
  1. Denial-of-service to HOST-mapped services
  2. SPN-jacking (simplifies S4U attack)
  3. Authentication downgrade (Kerberos to NTLM)
+This vulnerability has been patched by Microsoft in [March 10, 2026](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25177)
 
 A practical representation of that family of objects is the use of invisible Unicode characters in a servicePrincipalName attribute:
 
